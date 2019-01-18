@@ -18,12 +18,15 @@
 #import "UIView+PX.h"
 #import "UITextField+PX.h"
 #import "UITextView+PX.h"
-//#import "UITextView+MaxLength.h"
 
 #import "NSArray+PX.h"
 #import "NSDate+PX.h"
 #import "NSString+PX.h"
-#import "NSObject+PX.h"
 #import "PXObject.h"
+#import "PXUtilsConstant.h"
+
+#import "PXUtilsMacros.h"
+#import "PXUtilsConstInline.h"
+#import "PXUtilsSingleton.h"
 
 #endif /* PXUtils_h */

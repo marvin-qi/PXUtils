@@ -9,21 +9,36 @@
 #ifndef PXUtilsMacros_h
 #define PXUtilsMacros_h
 
+#define PXScreenScale           [[UIScreen mainScreen] scale]
 #define PXScreenBounds          [[UIScreen mainScreen] bounds]
-#define PXScreenWidth           PXScreenBounds.size.width
-#define PXScreenHeight          PXScreenBounds.size.height
-
-//以iPhone6为参照的宽高
-#define PXHeightByIP6(height)     roundf(height/375.0 * PXScreenWidth)
-#define PXWidthByIP6(Width)       roundf(Width/667.0 * PXScreenHeight)
-
-//以iPhone6P为参照的宽高
-#define PXHeightByIP6P(height)     roundf(height/414.0 * PXScreenWidth)
-#define PXWidthByIP6P(Width)       roundf(Width/736.0 * PXScreenHeight)
-
-#define PXIsX ([[UIApplication sharedApplication] statusBarFrame].size.height>20)
+#define PXScreenWidth           [[UIScreen mainScreen] bounds].size.width
+#define PXScreenHeight          [[UIScreen mainScreen] bounds].size.height
 
 #define PXUtilsLazy(object, assignment) (object = object ?: assignment)
+
+#define PXWeakType(type)    __weak typeof(type) weak##type = type
+#define PXStrongType(type)  __strong typeof(type) type = weak##type
+#define PXBlockType(type)   __block typeof(type)  block##type = type
+
+#define PXAvailableVersion(version) @available(iOS version,*)
+#define PXAvailableiOS11 @available(iOS 11.0,*)
+
+#define PXNotificationCenter [NSNotificationCenter defaultCenter]
+#define PXUserDefaults [NSUserDefaults standardUserDefaults]
+#define PXApplication [UIApplication sharedApplication]
+
+#define PXIOSVersion ([[[UIDevice currentDevice] systemVersion] floatValue])
+
+//沙盒路径
+#define PXHomePath NSHomeDirectory()
+//获取沙盒 Document
+#define PXDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Cache
+#define PXPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 temp
+#define PXPathTemp NSTemporaryDirectory()
+//Library/Caches 文件路径
+#define PXFilePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
 
 /**
  DEBUG打印

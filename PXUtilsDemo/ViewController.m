@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PXUtils.h"
+#import "User.h"
 
 @interface ViewController ()
 
@@ -31,14 +32,18 @@
     
     tv.backgroundColor = [UIColor px_colorWithHexString:@"E9E9E9"];
     tv.textColor = [UIColor orangeColor];
-//    tv.text = @"删除可以看到placeholder";
+    tv.text = @"删除可以看到placeholder";
     tv.placeholder = @"请输入";
     tv.placeholderFont = PXUtilsFont(16);
     tv.placeholderColor = [UIColor magentaColor];
     tv.font = PXUtilsFont(16);
-//    [tv px_limitMaxLength:12];
+    [tv px_limitMaxLength:tv.text.length];
     [tv setFrame:CGRectMake(100, 100, 200, 300)];
     
+    User *user0 = [User sharedInstance];
+    User *user1 = [User sharedInstance];
+    
+    PXUtilsLog(@"%@===%@",user0,user1);
 }
 
 

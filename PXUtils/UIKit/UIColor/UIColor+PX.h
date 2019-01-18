@@ -10,9 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define PXUtilsColorHex(hexString) [UIColor px_colorWithHexString:(hexString)]
-#define PXUtilsColorHexAlpha(hexString,alpha) [UIColor px_colorWithHexString:(hexString) alpha:(alpha)]
-#define PXUtilsRandomColor [UIColor px_randomColor]
 #define PXUtilsColorRgb(red, green, blue)     SPTRGBAColor(red, green, blue, 1.0)
 #define PXUtilsColorRgba(red, green, blue, alpha) [UIColor colorWithRed:(red)/255.0 green:(greed)/255.0 blue:(blue)/255.0 alpha:alpha]
 

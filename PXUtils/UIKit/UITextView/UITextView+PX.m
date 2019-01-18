@@ -8,8 +8,6 @@
 
 #import "UITextView+PX.h"
 #import "PXUtilsMacros.h"
-#import "NSString+PX.h"
-#import "UIView+PX.h"
 #import <objc/runtime.h>
 
 @interface UITextView ()<UITextViewDelegate>

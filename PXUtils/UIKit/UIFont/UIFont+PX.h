@@ -10,8 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define PXUtilsFont(fontSize) [UIFont systemFontOfSize:(fontSize)]
-#define PXUtilsBoldFont(fontSize) [UIFont boldSystemFontOfSize:(fontSize)]
 #define PXUtilsMicrosoftFont(fontSize) [UIFont px_microsoftYaHeiFontOfSize:(fontSize)]
 
 @interface UIFont (PX)
