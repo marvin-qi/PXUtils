@@ -15,7 +15,7 @@
     [self yy_setImageWithURL:[NSURL URLWithString:url] placeholder:placeholder];
 }
 
-- (void)px_setImageWithUrl:(NSString *)url placeholderName:(nonnull NSString *)placeholderName{
+- (void)px_setImageWithUrl:(NSString *)url placeholderName:(nullable NSString *)placeholderName{
     [self px_setImageWithUrl:url placeholder:[UIImage imageNamed:placeholderName]];
 }
 

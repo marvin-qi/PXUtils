@@ -7,7 +7,6 @@
 //
 
 #import "UITextView+PX.h"
-#import "PXUtilsMacros.h"
 #import <objc/runtime.h>
 
 @interface UITextView ()<UITextViewDelegate>
@@ -108,6 +107,7 @@
         CGFloat top = self.textContainerInset.top + self.layer.borderWidth;
         CGFloat width = CGRectGetWidth(self.bounds) - 2 * left;
         CGFloat height = [self.placeholderLabel sizeThatFits:CGSizeMake(width, 0)].height;
+        height = MIN(height, (CGRectGetHeight(self.bounds) - 2 * top));
         self.placeholderLabel.frame = CGRectMake(left, top, width, height);
         self.placeholderLabel.hidden = FALSE;
     }
@@ -121,6 +121,7 @@
         view.textColor = objc_getAssociatedObject(self, @selector(textColor));
         view.font = objc_getAssociatedObject(self, @selector(font));
         objc_setAssociatedObject(self, _cmd, view, OBJC_ASSOCIATION_RETAIN);
+        view.numberOfLines = 0;
         self.delegate = self;
     }
     return view;
