@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/DemonArrow/PXUtils.git", :tag => "#{s.version}" }
 
-  s.source_files  = "PXUtils/*.{h,m}"
+  s.source_files  = "PXUtils/*.h"
   s.subspec 'NSObject' do |ss|
     ss.source_files = "PXUtils/NSObject/**/*.{h,m}"
   end

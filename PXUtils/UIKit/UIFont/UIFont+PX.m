@@ -14,10 +14,10 @@
 + (void)px_showAllFonts{
     NSArray *familyNames = [UIFont familyNames];
     for( NSString *familyName in familyNames ){
-        PXUtilsLog( "Family: %s \n", [familyName UTF8String] );
+        PXUtilsLog(@"Family: %s \n", [familyName UTF8String] );
         NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
         for( NSString *fontName in fontNames ){
-            PXUtilsLog( "\tFont: %s \n", [fontName UTF8String] );
+            PXUtilsLog(@"\tFont: %s \n", [fontName UTF8String] );
         }
     }
 }
