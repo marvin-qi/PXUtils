@@ -9,10 +9,10 @@
 #ifndef PXUtilsMacros_h
 #define PXUtilsMacros_h
 
-#define PXScreenScale           [[UIScreen mainScreen] scale]
-#define PXScreenBounds          [[UIScreen mainScreen] bounds]
-#define PXScreenWidth           [[UIScreen mainScreen] bounds].size.width
-#define PXScreenHeight          [[UIScreen mainScreen] bounds].size.height
+#define PXScreenScale       [[UIScreen mainScreen] scale]
+#define PXScreenBounds      [[UIScreen mainScreen] bounds]
+#define PXScreenWidth       [[UIScreen mainScreen] bounds].size.width
+#define PXScreenHeight      [[UIScreen mainScreen] bounds].size.height
 
 #define PXUtilsLazy(object, assignment) (object = object ?: assignment)
 
@@ -21,13 +21,11 @@
 #define PXBlockType(type)   __block typeof(type)  block##type = type
 
 #define PXAvailableVersion(version) @available(iOS version,*)
-#define PXAvailableiOS11 @available(iOS 11.0,*)
+#define PXAvailableiOS11            @available(iOS 11.0,*)
 
 #define PXNotificationCenter [NSNotificationCenter defaultCenter]
-#define PXUserDefaults [NSUserDefaults standardUserDefaults]
-#define PXApplication [UIApplication sharedApplication]
-
-#define PXIOSVersion ([[[UIDevice currentDevice] systemVersion] floatValue])
+#define PXUserDefaults       [NSUserDefaults standardUserDefaults]
+#define PXApplication        [UIApplication sharedApplication]
 
 //沙盒路径
 #define PXHomePath NSHomeDirectory()

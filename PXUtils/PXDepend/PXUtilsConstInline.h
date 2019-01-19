@@ -140,4 +140,8 @@ static inline NSString *PXUtilsIntToString(NSInteger intValue){
     return [NSString stringWithFormat:@"%@",@(intValue)];
 }
 
+static inline CGFloat PXIOSVersion(){
+    return ([[[UIDevice currentDevice] systemVersion] floatValue]);
+}
+
 #endif /* PXUtilsConstInline_h */
