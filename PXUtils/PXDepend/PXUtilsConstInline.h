@@ -9,6 +9,8 @@
 #ifndef PXUtilsConstInline_h
 #define PXUtilsConstInline_h
 
+#import "UIColor+PX.h"
+
 /**
  是否是iPhone X以上的机型
  */
@@ -90,8 +92,6 @@ static inline CGFloat PXUtilsHeightByIP6P(CGFloat height){
 static inline UIImage * PXUtilsImageNamed(NSString *imageName){
     return [UIImage imageNamed:imageName];
 }
-
-#import "UIColor+PX.h"
 
 /**
  16进制字符串生成颜色
