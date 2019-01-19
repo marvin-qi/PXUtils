@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
   s.subspec 'UIKit' do |ss|
     ss.source_files = "PXUtils/UIKit/**/*.{h,m}"
   end
-  s.resource_bundles = "PXUtils/Resource/*.ttf"
   s.dependency 'YYWebImage', '~> 1.0.5'
   s.requires_arc = true
 
