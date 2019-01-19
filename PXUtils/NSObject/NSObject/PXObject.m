@@ -38,6 +38,24 @@
     }
 }
 
++ (dispatch_source_t)startTimeWithSeconds:(int)seconds completed:(kCompletedSecond)completed{
+    __block NSInteger time = seconds;
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(_timer, ^{
+        time --;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(time <= 0) {
+                completed?completed(TRUE,0):nil;
+                dispatch_source_cancel(_timer);
+            }else completed?completed(FALSE,time%60):nil;
+        });
+    });
+    dispatch_resume(_timer);
+    return _timer;
+}
+
 + (CGFloat)distanceBetweenLat1:(CGFloat)lat1 lng1:(CGFloat)lng1 lat2:(CGFloat)lat2 lng2:(CGFloat)lng2{
     CGFloat dd = M_PI/180;
     CGFloat x1=lat1*dd,x2=lat2*dd;

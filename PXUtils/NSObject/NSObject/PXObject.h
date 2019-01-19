@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^kCompleted)(BOOL completed);///< 仅回调布尔值
 typedef void(^kCompletedResponse)(BOOL completed, id _Nullable response);///< 回调一个布尔值和任意内容
+typedef void(^kCompletedSecond)(BOOL completed, NSInteger seconds);
 
 @interface PXObject : NSObject
 
@@ -21,6 +22,14 @@ typedef void(^kCompletedResponse)(BOOL completed, id _Nullable response);///< �
 + (void)jumpToAppSetting;///< 去App设置中心
 
 + (void)jumpToCommentAppId:(NSString *)appId;///< 去App Store对应App的评论页
+
+/**
+ 倒计时
+
+ @param seconds 倒计时时间
+ @param completed 回调
+ */
++ (dispatch_source_t)startTimeWithSeconds:(int)seconds completed:(nullable kCompletedSecond)completed;
 
 /**
  返回两个地理点直接的距离/m

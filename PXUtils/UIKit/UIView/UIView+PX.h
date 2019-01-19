@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGPoint origin;
 @property (nonatomic) CGSize  size;
 
+@property (nonatomic, readonly, strong) UIViewController *viewController;
+
 /**
  返回一个带颜色的view
 

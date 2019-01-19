@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "PXUtils"
-  s.version      = "1.1.0"
-  s.summary      = "iOS开发重用工具类"
+  s.version      = "1.2.0"
+  s.summary      = "iOS开发工具类"
 
   s.homepage     = "http://github.com/DemonArrow/PXUtils.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -17,6 +17,9 @@ Pod::Spec.new do |s|
   end
   s.subspec 'UIKit' do |kit|
     kit.source_files = "PXUtils/UIKit/**/*.{h,m}"
+  end
+  s.subspec 'PXDebug' do |debug|
+    debug.source_files = "PXUtils/PXDebug/*.{h,m}"
   end
   s.dependency 'YYWebImage', '~> 1.0.5'
   s.requires_arc = true

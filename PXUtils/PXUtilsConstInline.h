@@ -132,4 +132,12 @@ static inline UIFont *PXUtilsBoldFont(CGFloat fontSize){
     return [UIFont boldSystemFontOfSize:fontSize];
 }
 
+
+/**
+ int转string
+ */
+static inline NSString *PXUtilsIntToString(NSInteger intValue){
+    return [NSString stringWithFormat:@"%@",@(intValue)];
+}
+
 #endif /* PXUtilsConstInline_h */

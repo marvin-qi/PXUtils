@@ -8,6 +8,10 @@
 
 #import "UIView+PX.h"
 
+@interface UIView ()
+
+@end
+
 @implementation UIView (PX)
 
 - (CGFloat)left {
@@ -104,6 +108,15 @@
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;
+}
+
+- (UIViewController *)viewController{
+    for (UIView *view = self; view; view = view.superview) {
+        if ([view.nextResponder isKindOfClass:UIViewController.class]) {
+            return (UIViewController *)view.nextResponder;
+        }
+    }
+    return nil;
 }
 
 + (instancetype)px_viewWithColor:(UIColor *)color{

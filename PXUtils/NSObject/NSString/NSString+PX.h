@@ -11,8 +11,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define PXUtilsIntToString(intValue) [NSString stringWithFormat:@"%@",@(intValue)]
-
 @interface NSString (PX)
 
 @property (nonatomic, readonly, assign) BOOL isMobile;///< 是否是手机号码

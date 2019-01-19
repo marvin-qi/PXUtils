@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "PXDebug.h"
+#import "ViewController.h"
+#import "PXUtilsMacros.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if (!self.window) {
+        self.window = [[UIWindow alloc] initWithFrame:PXScreenBounds];
+        self.window.backgroundColor = [UIColor whiteColor];
+    }
+    [PXDebug.debug px_start];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
