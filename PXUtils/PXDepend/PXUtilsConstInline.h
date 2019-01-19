@@ -14,6 +14,11 @@
  */
 #define PXUtilsIsX ([[UIApplication sharedApplication] statusBarFrame].size.height>20)
 
+#define PXScreenScale       [[UIScreen mainScreen] scale]
+#define PXScreenBounds      [[UIScreen mainScreen] bounds]
+#define PXScreenWidth       [[UIScreen mainScreen] bounds].size.width
+#define PXScreenHeight      [[UIScreen mainScreen] bounds].size.height
+
 /**
  状态栏高度
  */

@@ -9,11 +9,6 @@
 #ifndef PXUtilsMacros_h
 #define PXUtilsMacros_h
 
-#define PXScreenScale       [[UIScreen mainScreen] scale]
-#define PXScreenBounds      [[UIScreen mainScreen] bounds]
-#define PXScreenWidth       [[UIScreen mainScreen] bounds].size.width
-#define PXScreenHeight      [[UIScreen mainScreen] bounds].size.height
-
 #define PXUtilsLazy(object, assignment) (object = object ?: assignment)
 
 #define PXWeakType(type)    __weak typeof(type) weak##type = type
