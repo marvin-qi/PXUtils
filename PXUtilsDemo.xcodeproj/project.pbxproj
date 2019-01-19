@@ -11,13 +11,13 @@
 		A606758421F19FA9009B7533 /* PXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A606758021F19FA9009B7533 /* PXObject.m */; };
 		A606758B21F1C756009B7533 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A606758A21F1C755009B7533 /* User.m */; };
 		A606758F21F1CCFC009B7533 /* PXUtilsConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = A606758E21F1CCFC009B7533 /* PXUtilsConstant.m */; };
+		A606759221F2EE0D009B7533 /* yahei.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A606759121F2EE0D009B7533 /* yahei.ttf */; };
 		A67A2D3921F021190001F39B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2D3821F021190001F39B /* AppDelegate.m */; };
 		A67A2D3C21F021190001F39B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2D3B21F021190001F39B /* ViewController.m */; };
 		A67A2D3F21F021190001F39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D3D21F021190001F39B /* Main.storyboard */; };
 		A67A2D4121F021190001F39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4021F021190001F39B /* Assets.xcassets */; };
 		A67A2D4421F021190001F39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4221F021190001F39B /* LaunchScreen.storyboard */; };
 		A67A2D4721F021190001F39B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2D4621F021190001F39B /* main.m */; };
-		A67A2D6221F022CD0001F39B /* yahei.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D6121F022CD0001F39B /* yahei.ttf */; };
 		A67A2DB221F073150001F39B /* NSArray+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DAB21F073150001F39B /* NSArray+PX.m */; };
 		A67A2DB321F073150001F39B /* NSDate+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DAE21F073150001F39B /* NSDate+PX.m */; };
 		A67A2DB421F073150001F39B /* NSString+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DB021F073150001F39B /* NSString+PX.m */; };
@@ -42,6 +42,7 @@
 		A606758C21F1CA83009B7533 /* PXUtilsConstInline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstInline.h; sourceTree = "<group>"; };
 		A606758D21F1CCFC009B7533 /* PXUtilsConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstant.h; sourceTree = "<group>"; };
 		A606758E21F1CCFC009B7533 /* PXUtilsConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXUtilsConstant.m; sourceTree = "<group>"; };
+		A606759121F2EE0D009B7533 /* yahei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yahei.ttf; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		A67A2D4521F021190001F39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A67A2D4621F021190001F39B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A67A2D5621F0218B0001F39B /* PXUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtils.h; sourceTree = "<group>"; };
-		A67A2D6121F022CD0001F39B /* yahei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yahei.ttf; sourceTree = "<group>"; };
 		A67A2D6921F03C550001F39B /* PXUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsMacros.h; sourceTree = "<group>"; };
 		A67A2DAA21F073150001F39B /* NSArray+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PX.h"; sourceTree = "<group>"; };
 		A67A2DAB21F073150001F39B /* NSArray+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PX.m"; sourceTree = "<group>"; };
@@ -115,6 +115,14 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		A606759021F2EE0D009B7533 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A606759121F2EE0D009B7533 /* yahei.ttf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A67A2D2B21F021180001F39B = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +144,7 @@
 		A67A2D3621F021190001F39B /* PXUtilsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A606759021F2EE0D009B7533 /* Resource */,
 				A67A2D3721F021190001F39B /* AppDelegate.h */,
 				A67A2D3821F021190001F39B /* AppDelegate.m */,
 				A67A2D3A21F021190001F39B /* ViewController.h */,
@@ -155,7 +164,6 @@
 		A67A2D4D21F021710001F39B /* PXUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A67A2D6021F022910001F39B /* Resource */,
 				A67A2DB521F0731E0001F39B /* UIKit */,
 				A67A2D5521F021710001F39B /* NSObject */,
 				A67A2D5621F0218B0001F39B /* PXUtils.h */,
@@ -175,14 +183,6 @@
 				A67A2DAF21F073150001F39B /* NSString */,
 			);
 			path = NSObject;
-			sourceTree = "<group>";
-		};
-		A67A2D6021F022910001F39B /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2D6121F022CD0001F39B /* yahei.ttf */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		A67A2DA921F073150001F39B /* NSArray */ = {
@@ -377,7 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67A2D4421F021190001F39B /* LaunchScreen.storyboard in Resources */,
-				A67A2D6221F022CD0001F39B /* yahei.ttf in Resources */,
+				A606759221F2EE0D009B7533 /* yahei.ttf in Resources */,
 				A67A2D4121F021190001F39B /* Assets.xcassets in Resources */,
 				A67A2D3F21F021190001F39B /* Main.storyboard in Resources */,
 			);

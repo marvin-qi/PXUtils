@@ -21,7 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  微软雅黑字体
-
+ 调用此方法必须先导入微软雅黑字体包
+ 并且该字体的名字确实是MicrosoftYaHeiUI
+ 否则该方法不能调用,也可以下载demo中的雅黑字体包
+ 并在info.plist中引入'Fonts provided by application',item字段名为yahei.ttf
  @param fontSize 字号
  */
 + (UIFont *)px_microsoftYaHeiFontOfSize:(CGFloat)fontSize;
