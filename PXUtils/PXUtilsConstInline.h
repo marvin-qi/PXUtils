@@ -16,10 +16,10 @@
  */
 #define PXUtilsIsX ([[UIApplication sharedApplication] statusBarFrame].size.height>20)
 
-#define PXScreenScale       [[UIScreen mainScreen] scale]
-#define PXScreenBounds      [[UIScreen mainScreen] bounds]
-#define PXScreenWidth       [[UIScreen mainScreen] bounds].size.width
-#define PXScreenHeight      [[UIScreen mainScreen] bounds].size.height
+#define PXUtilsScreenScale       [[UIScreen mainScreen] scale]
+#define PXUtilsScreenBounds      [[UIScreen mainScreen] bounds]
+#define PXUtilsScreenWidth       [[UIScreen mainScreen] bounds].size.width
+#define PXUtilsScreenHeight      [[UIScreen mainScreen] bounds].size.height
 
 /**
  状态栏高度
@@ -60,28 +60,28 @@ static inline CGFloat PXUtilsKeyBoardHeight(){
  以iPhone6为参照的宽
  */
 static inline CGFloat PXUtilsWidthByIP6(CGFloat width){
-    return roundf(width * PXScreenWidth / 375.0);
+    return roundf(width * PXUtilsScreenWidth / 375.0);
 }
 
 /**
  以iPhone6为参照的高
  */
 static inline CGFloat PXUtilsHeightByIP6(CGFloat height){
-    return roundf(height * PXScreenHeight / 667.0);
+    return roundf(height * PXUtilsScreenHeight / 667.0);
 }
 
 /**
  以iPhone6P为参照的宽
  */
 static inline CGFloat PXUtilsWidthByIP6P(CGFloat width){
-    return roundf(width * PXScreenWidth / 414.0);
+    return roundf(width * PXUtilsScreenWidth / 414.0);
 }
 
 /**
  以iPhone6P为参照的高
  */
 static inline CGFloat PXUtilsHeightByIP6P(CGFloat height){
-    return roundf(height * PXScreenHeight / 736.0);
+    return roundf(height * PXUtilsScreenHeight / 736.0);
 }
 
 /**

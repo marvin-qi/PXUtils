@@ -10,12 +10,12 @@
 #define PXUtilsSingleton_h
 
 // .h文件
-#define PXSingletonH(name) + (instancetype)shared##name;
+#define PXUtilsSingletonH(name) + (instancetype)shared##name;
 
 // .m文件
 #if __has_feature(objc_arc)
 
-#define PXSingletonM(name) \
+#define PXUtilsSingletonM(name) \
 static id _instace; \
 \
 + (id)allocWithZone:(struct _NSZone *)zone { \

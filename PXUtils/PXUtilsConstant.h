@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-FOUNDATION_EXTERN CGFloat const PXOnlyNavBarHeight;///< 仅导航栏高度
-FOUNDATION_EXTERN CGFloat const PXOnlyTabBarHeight;///< 仅Tab栏高度
+FOUNDATION_EXTERN CGFloat const PXUtilsOnlyNavBarHeight;///< 仅导航栏高度
+FOUNDATION_EXTERN CGFloat const PXUtilsOnlyTabBarHeight;///< 仅Tab栏高度
 
-FOUNDATION_EXTERN NSString * const PXConstCell;///< UITableViewCell id
+FOUNDATION_EXTERN NSString * const PXUtilsConstCell;///< UITableViewCell id
 

@@ -8,7 +8,7 @@
 
 #import "PXUtilsConstant.h"
 
-CGFloat const PXOnlyNavBarHeight = 44.f;
-CGFloat const PXOnlyTabBarHeight = 49.f;
+CGFloat const PXUtilsOnlyNavBarHeight = 44.f;
+CGFloat const PXUtilsOnlyTabBarHeight = 49.f;
 
-NSString * const PXConstCell = @"px_const_cell_id";
+NSString * const PXUtilsConstCell = @"px_const_cell_id";
