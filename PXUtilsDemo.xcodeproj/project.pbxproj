@@ -50,7 +50,6 @@
 		A606759E21F30572009B7533 /* PXDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXDebug.m; sourceTree = "<group>"; };
 		A60675A021F3173C009B7533 /* TwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoVC.h; sourceTree = "<group>"; };
 		A60675A121F3173C009B7533 /* TwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoVC.m; sourceTree = "<group>"; };
-		A60675D921F321FB009B7533 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A60675E021F55B8C009B7533 /* PXUtilsConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstant.h; sourceTree = "<group>"; };
 		A60675E121F55B8C009B7533 /* PXUtilsConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUtilsConstant.m; sourceTree = "<group>"; };
 		A60675E221F55B8C009B7533 /* PXUtilsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsSingleton.h; sourceTree = "<group>"; };
@@ -175,7 +174,6 @@
 				A60675A121F3173C009B7533 /* TwoVC.m */,
 				A606758921F1C755009B7533 /* User.h */,
 				A606758A21F1C755009B7533 /* User.m */,
-				A60675D921F321FB009B7533 /* PrefixHeader.pch */,
 				A67A2D4D21F021710001F39B /* PXUtils */,
 				A67A2D4021F021190001F39B /* Assets.xcassets */,
 				A67A2D4221F021190001F39B /* LaunchScreen.storyboard */,
@@ -625,7 +623,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66QT26DRVD;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = PXUtilsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,7 +643,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66QT26DRVD;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = PXUtilsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
