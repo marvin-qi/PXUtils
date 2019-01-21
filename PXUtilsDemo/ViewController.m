@@ -43,7 +43,7 @@
     tv.placeholderFont = PXUtilsFont(16);
     tv.placeholderColor = [UIColor magentaColor];
     tv.font = PXUtilsFont(16);
-    [tv px_limitMaxLength:tv.text.length];
+//    [tv px_limitMaxLength:tv.text.length];
     [tv setFrame:CGRectMake(100, 150, 200, 300)];
     
     User *user0 = [User sharedInstance];

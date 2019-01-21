@@ -10,6 +10,6 @@
 
 @implementation User
 
-PXSingletonM(Instance);
+PXUtilsSingletonM(Instance);
 
 @end

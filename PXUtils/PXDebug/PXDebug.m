@@ -99,7 +99,7 @@ static PXDebug *instance = nil;
 
 - (UILabel *)vcLabel{
     return PXUtilsLazy(_vcLabel, ({
-        UILabel *view = [[UILabel alloc] initWithFrame:CGRectMake(0, PXUtilsStatusBarHeight(), PXScreenWidth, 20)];
+        UILabel *view = [[UILabel alloc] initWithFrame:CGRectMake(0, PXUtilsStatusBarHeight(), PXUtilsScreenWidth, 20)];
         [PXUtilsApplication.delegate.window addSubview:view];
         view.textColor = [UIColor redColor];
         view.font = PXUtilsFont(15);
@@ -110,7 +110,7 @@ static PXDebug *instance = nil;
 
 - (UILabel *)fpsLabel{
     return PXUtilsLazy(_fpsLabel, ({
-        UILabel *view = [[UILabel alloc] initWithFrame:CGRectMake(PXScreenWidth - 100, 0, 100, 20)];
+        UILabel *view = [[UILabel alloc] initWithFrame:CGRectMake(PXUtilsScreenWidth - 100, 0, 100, 20)];
         [self.vcLabel addSubview:view];
         view.font = PXUtilsFont(15);
         view.textAlignment = NSTextAlignmentRight;

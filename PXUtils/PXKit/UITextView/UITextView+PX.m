@@ -9,7 +9,7 @@
 #import "UITextView+PX.h"
 #import <objc/runtime.h>
 
-@interface UITextView ()<UITextViewDelegate>
+@interface UITextView ()
 @property (nonatomic,strong) UILabel *placeholderLabel;///< placeholder显示的文本
 @end
 
@@ -30,7 +30,7 @@
     if (self.text.length > 0) {
         [self textDidChanged:self];
     }
-    self.delegate = self;
+    self.placeholderLabel.backgroundColor = [UIColor clearColor];
 }
 
 - (NSUInteger)maxLength{
@@ -81,8 +81,8 @@
     self.maxLength = maxLength;
 }
 
-- (void)textViewDidChange:(UITextView *)textView{
-    [self textDidChanged:textView];
+- (void)textDidChanged{
+    [self textDidChanged:self];
 }
 
 - (void)textDidChanged:(UITextView *)textView{
@@ -125,7 +125,8 @@
         view.font = objc_getAssociatedObject(self, @selector(font));
         objc_setAssociatedObject(self, _cmd, view, OBJC_ASSOCIATION_RETAIN);
         view.numberOfLines = 0;
-        self.delegate = self;
+        view.backgroundColor = [UIColor clearColor];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChanged) name:UITextViewTextDidChangeNotification object:nil];
     }
     return view;
 }

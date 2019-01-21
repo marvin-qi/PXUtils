@@ -22,7 +22,7 @@
     // Override point for customization after application launch.
     
     if (!self.window) {
-        self.window = [[UIWindow alloc] initWithFrame:PXScreenBounds];
+        self.window = [[UIWindow alloc] initWithFrame:PXUtilsScreenBounds];
         self.window.backgroundColor = [UIColor whiteColor];
     }
     [PXDebug.debug px_start];

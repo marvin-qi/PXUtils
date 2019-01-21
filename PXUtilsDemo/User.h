@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,assign) BOOL isLogin;
 
-PXSingletonH(Instance);
+PXUtilsSingletonH(Instance);
 
 @end
 
