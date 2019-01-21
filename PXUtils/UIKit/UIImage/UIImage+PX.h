@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger,PXGradientType) {
+    PXGradientTypeTopBottom          = 0,///< 上->下
+    PXGradientTypeLeftRight          = 1,///< 左->右
+    PXGradientTypeLeftTopRightBottom = 2,///< 左上->右下
+    PXGradientTypeLeftBottomRightTop = 3 ///< 左下->右上
+};
+
 @interface UIImage (PX)
 
 /**
@@ -45,6 +52,25 @@ NS_ASSUME_NONNULL_BEGIN
  @return 拉伸后的图片
  */
 - (UIImage *)px_resizeImageWithLeftCap:(CGFloat)leftCap topCap:(CGFloat)topCap;
+
+/**
+ 生成渐变色图片
+ 
+ @param type 渐变方案
+ @param size 尺寸
+ @param colors 颜色集
+ */
++ (UIImage *)px_gradientImageColors:(nonnull NSArray <UIColor *>*)colors size:(CGSize)size gradientType:(PXGradientType)type;
+
+/**
+ 生成渐变色
+ 
+ @param colors 颜色集
+ @param size 尺寸
+ @param startPoint 渐变开始点
+ @param endPoint 渐变结束点
+ */
++ (UIImage *)px_gradientImageColors:(nonnull NSArray <UIColor *>*)colors size:(CGSize)size startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
 
 /**
  给图片施加水印图片

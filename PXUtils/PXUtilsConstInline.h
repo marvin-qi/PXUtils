@@ -95,7 +95,7 @@ static inline UIImage * PXUtilsImageNamed(NSString *imageName){
 
 /**
  16进制字符串生成颜色
-
+ 
  @param hexString 16进制字符串
  */
 static inline UIColor *PXUtilsColorHex(NSString *hexString){
@@ -104,7 +104,7 @@ static inline UIColor *PXUtilsColorHex(NSString *hexString){
 
 /**
  16进制字符串生成颜色，加透明度
-
+ 
  @param hexString 16进制字符串
  @param alpha 透明度
  */
@@ -136,7 +136,6 @@ static inline UIFont *PXUtilsFont(CGFloat fontSize){
 static inline UIFont *PXUtilsBoldFont(CGFloat fontSize){
     return [UIFont boldSystemFontOfSize:fontSize];
 }
-
 
 /**
  int转string

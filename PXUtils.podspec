@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PXUtils"
-  s.version      = "1.5.0"
+  s.version      = "1.6.0"
   s.summary      = "iOS开发工具类"
 
   s.homepage     = "http://github.com/DemonArrow/PXUtils.git"
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/DemonArrow/PXUtils.git", :tag => "#{s.version}" }
 
-  s.source_files  = "PXUtils/*.h"
+  s.source_files  = "PXUtils/*.{h.m}"
   s.public_header_files = "PXUtils/PXUtils.h"
   s.subspec 'NSObject' do |ss|
     ss.source_files = "PXUtils/NSObject/**/*.{h,m}"
@@ -21,9 +21,6 @@ Pod::Spec.new do |s|
   end
   s.subspec 'PXDebug' do |ss|
     ss.source_files = "PXUtils/PXDebug/*.{h,m}"
-  end
-  s.subspec 'PXDepend' do |ss|
-    ss.source_files = "PXUtils/PXDepend/*.{h,m}"
   end
   s.dependency 'YYWebImage', '~> 1.0.5'
   s.requires_arc = true
