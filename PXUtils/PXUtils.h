@@ -26,6 +26,9 @@
 #import "NSString+PX.h"
 #import "PXObject.h"
 
+//PXSecurity
+#import "NSString+Security.h"
+
 #import "PXUtilsMacros.h"
 #import "PXUtilsConstInline.h"
 #import "PXUtilsSingleton.h"

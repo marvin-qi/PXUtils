@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (PX)
 
-- (void)px_setImageWithUrl:(NSString *)url placeholder:(UIImage *)placeholder;
-- (void)px_setImageWithUrl:(NSString *)url placeholderName:(nullable NSString *)placeholderName;
+- (void)px_setImageWithUrl:(NSString *)url placeholder:(nullable UIImage *)placeholder;
+- (void)px_setImageWithUrl:(NSString *)url placeholderName:(nonnull NSString *)placeholderName;
 
 @end
 

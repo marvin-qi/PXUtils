@@ -30,6 +30,10 @@
     return [self checkPassword];
 }
 
+- (NSRange)rangOfAll{
+    return NSMakeRange(0, self.length);
+}
+
 - (BOOL)checkMobile{
     NSString *phoneRegex = @"^1([3-9][0-9])\\d{8}$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];

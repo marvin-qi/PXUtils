@@ -11,11 +11,11 @@
 
 @implementation UIImageView (PX)
 
-- (void)px_setImageWithUrl:(NSString *)url placeholder:(UIImage *)placeholder{
+- (void)px_setImageWithUrl:(NSString *)url placeholder:(nullable UIImage *)placeholder{
     [self yy_setImageWithURL:[NSURL URLWithString:url] placeholder:placeholder];
 }
 
-- (void)px_setImageWithUrl:(NSString *)url placeholderName:(nullable NSString *)placeholderName{
+- (void)px_setImageWithUrl:(NSString *)url placeholderName:(nonnull NSString *)placeholderName{
     [self px_setImageWithUrl:url placeholder:[UIImage imageNamed:placeholderName]];
 }
 

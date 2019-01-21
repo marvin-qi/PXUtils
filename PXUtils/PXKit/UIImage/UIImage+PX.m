@@ -12,6 +12,17 @@
 
 static NSCache *imageCache;
 
+- (UIImage *)px_imageByTintColor:(UIColor *)color{
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
+    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+    [color set];
+    UIRectFill(rect);
+    [self drawAtPoint:CGPointMake(0, 0) blendMode:kCGBlendModeDestinationIn alpha:1];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 + (UIImage *)px_imageFromColor:(UIColor *)color{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -43,6 +54,20 @@ static NSCache *imageCache;
 
 - (UIImage *)px_resizeImageWithLeftCap:(CGFloat)leftCap topCap:(CGFloat)topCap{
     return [self stretchableImageWithLeftCapWidth:self.size.width * leftCap topCapHeight:self.size.height * topCap];
+}
+
+- (UIImage *)px_scalImageToSize:(CGSize)size{
+    // 创建一个bitmap的context
+    // 并把它设置成为当前正在使用的context
+    UIGraphicsBeginImageContext(size);
+    // 绘制改变大小的图片
+    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    // 从当前context中创建一个改变大小后的图片
+    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    // 使当前的context出堆栈
+    UIGraphicsEndImageContext();
+    // 返回新的改变大小后的图片
+    return scaledImage;
 }
 
 + (UIImage *)px_gradientImageColors:(NSArray <UIColor *>*)colors size:(CGSize)size gradientType:(PXGradientType)type{
@@ -113,6 +138,43 @@ static NSCache *imageCache;
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
+}
+
+static inline CGFloat PXDegreesToRadians(CGFloat degrees) {
+    return degrees * M_PI / 180;
+}
+
+- (UIImage *)px_imageRotate:(CGFloat)rotate fitSize:(BOOL)fit{
+    rotate = PXDegreesToRadians(rotate);
+    size_t width = (size_t)CGImageGetWidth(self.CGImage);
+    size_t height = (size_t)CGImageGetHeight(self.CGImage);
+    CGRect newRect = CGRectApplyAffineTransform(CGRectMake(0., 0., width, height),
+                                                fit ? CGAffineTransformMakeRotation(rotate) : CGAffineTransformIdentity);
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(NULL,
+                                                 (size_t)newRect.size.width,
+                                                 (size_t)newRect.size.height,
+                                                 8,
+                                                 (size_t)newRect.size.width * 4,
+                                                 colorSpace,
+                                                 kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
+    CGColorSpaceRelease(colorSpace);
+    if (!context) return nil;
+    
+    CGContextSetShouldAntialias(context, true);
+    CGContextSetAllowsAntialiasing(context, true);
+    CGContextSetInterpolationQuality(context, kCGInterpolationHigh);
+    
+    CGContextTranslateCTM(context, +(newRect.size.width * 0.5), +(newRect.size.height * 0.5));
+    CGContextRotateCTM(context, rotate);
+    
+    CGContextDrawImage(context, CGRectMake(-(width * 0.5), -(height * 0.5), width, height), self.CGImage);
+    CGImageRef imgRef = CGBitmapContextCreateImage(context);
+    UIImage *img = [UIImage imageWithCGImage:imgRef scale:self.scale orientation:self.imageOrientation];
+    CGImageRelease(imgRef);
+    CGContextRelease(context);
+    return img;
 }
 
 @end

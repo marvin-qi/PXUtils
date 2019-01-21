@@ -148,7 +148,7 @@ static UIApplication *_YYSharedApplication() {
 + (void)_changeNetworkActivityCount:(NSInteger)delta {
     if (!_YYSharedApplication()) return;
     
-    void (^block)() = ^{
+    void (^block)(void) = ^{
         _YYWebImageApplicationNetworkIndicatorInfo *info = [self _networkIndicatorInfo];
         if (!info) {
             info = [_YYWebImageApplicationNetworkIndicatorInfo new];

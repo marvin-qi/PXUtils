@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, assign) BOOL isIdNumberNormal;///< 是否是身份证号码,普通校验
 @property (nonatomic, readonly, assign) BOOL isIdNumber;///< 是否是身份证号码,精度校验
 @property (nonatomic, readonly, assign) BOOL isPassword;///< 校验是否是6-16位字母数字组合密码
+@property (nonatomic, readonly, assign) NSRange rangOfAll;///< 字符的所有范围
 
 - (BOOL)checkMobile;///< 校验是否为手机号码
 - (BOOL)checkEmaile;///< 校验是否为电子邮箱

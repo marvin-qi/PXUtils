@@ -100,7 +100,7 @@ static PXDebug *instance = nil;
 - (UILabel *)vcLabel{
     return PXUtilsLazy(_vcLabel, ({
         UILabel *view = [[UILabel alloc] initWithFrame:CGRectMake(0, PXUtilsStatusBarHeight(), PXScreenWidth, 20)];
-        [PXApplication.delegate.window addSubview:view];
+        [PXUtilsApplication.delegate.window addSubview:view];
         view.textColor = [UIColor redColor];
         view.font = PXUtilsFont(15);
         view.backgroundColor = PXUtilsColorHexAlpha(@"000000", .4);

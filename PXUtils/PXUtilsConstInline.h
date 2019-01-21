@@ -148,4 +148,38 @@ static inline CGFloat PXIOSVersion(){
     return ([[[UIDevice currentDevice] systemVersion] floatValue]);
 }
 
+/**
+ 沙盒路径
+ */
+static inline NSString *PXUtilsHomePath(){
+    return NSHomeDirectory();
+}
+/**
+ 获取沙盒 Document
+ */
+static inline NSString *PXUtilsDocumentPath(){
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, TRUE) firstObject];
+}
+
+/**
+ 获取沙盒 Cache
+ */
+static inline NSString *PXUtilsPathCache(){
+    return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, TRUE) firstObject];
+}
+
+/**
+ 获取沙盒 temp
+ */
+static inline NSString *PXUtilsPathTemp(){
+    return NSTemporaryDirectory();
+}
+
+/**
+ Library/Caches 文件路径
+ */
+static inline NSURL *PXUtilsFilePath(){
+    return [[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:TRUE error:nil];
+}
+
 #endif /* PXUtilsConstInline_h */

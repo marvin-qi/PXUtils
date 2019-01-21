@@ -31,6 +31,8 @@
 		A60675D721F3218E009B7533 /* NSString+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DB021F073150001F39B /* NSString+PX.m */; };
 		A60675D821F321BF009B7533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2D4621F021190001F39B /* main.m */; };
 		A60675E521F55B8C009B7533 /* PXUtilsConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675E121F55B8C009B7533 /* PXUtilsConstant.m */; };
+		A60675F421F5A156009B7533 /* NSString+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675F321F5A156009B7533 /* NSString+Security.m */; };
+		A60675F721F5A16C009B7533 /* NSData+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675F621F5A16C009B7533 /* NSData+Security.m */; };
 		A67A2D4121F021190001F39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4021F021190001F39B /* Assets.xcassets */; };
 		A67A2D4421F021190001F39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4221F021190001F39B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,10 @@
 		A60675E221F55B8C009B7533 /* PXUtilsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsSingleton.h; sourceTree = "<group>"; };
 		A60675E321F55B8C009B7533 /* PXUtilsConstInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstInline.h; sourceTree = "<group>"; };
 		A60675E721F56775009B7533 /* PXUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsMacros.h; sourceTree = "<group>"; };
+		A60675F221F5A156009B7533 /* NSString+Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Security.h"; sourceTree = "<group>"; };
+		A60675F321F5A156009B7533 /* NSString+Security.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Security.m"; sourceTree = "<group>"; };
+		A60675F521F5A16C009B7533 /* NSData+Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Security.h"; sourceTree = "<group>"; };
+		A60675F621F5A16C009B7533 /* NSData+Security.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Security.m"; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,6 +150,17 @@
 			path = PXDebug;
 			sourceTree = "<group>";
 		};
+		A60675F121F5A147009B7533 /* PXSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				A60675F221F5A156009B7533 /* NSString+Security.h */,
+				A60675F321F5A156009B7533 /* NSString+Security.m */,
+				A60675F521F5A16C009B7533 /* NSData+Security.h */,
+				A60675F621F5A16C009B7533 /* NSData+Security.m */,
+			);
+			path = PXSecurity;
+			sourceTree = "<group>";
+		};
 		A67A2D2B21F021180001F39B = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +203,7 @@
 		A67A2D4D21F021710001F39B /* PXUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A60675F121F5A147009B7533 /* PXSecurity */,
 				A606759321F30534009B7533 /* PXDebug */,
 				A67A2DB521F0731E0001F39B /* PXKit */,
 				A67A2D5521F021710001F39B /* PXObject */,
@@ -474,6 +492,8 @@
 				A60675C821F3218E009B7533 /* PXDebug.m in Sources */,
 				A60675C921F3218E009B7533 /* UIView+Debug.m in Sources */,
 				A60675CA21F3218E009B7533 /* UIViewController+Debug.m in Sources */,
+				A60675F421F5A156009B7533 /* NSString+Security.m in Sources */,
+				A60675F721F5A16C009B7533 /* NSData+Security.m in Sources */,
 				A60675CB21F3218E009B7533 /* UIButton+PX.m in Sources */,
 				A60675CC21F3218E009B7533 /* UIColor+PX.m in Sources */,
 				A60675CD21F3218E009B7533 /* UIFont+PX.m in Sources */,

@@ -19,6 +19,8 @@ typedef NS_ENUM(NSInteger,PXGradientType) {
 
 @interface UIImage (PX)
 
+- (UIImage *)px_imageByTintColor:(UIColor *)color;
+
 /**
  根据颜色返回图片
 
@@ -35,7 +37,7 @@ typedef NS_ENUM(NSInteger,PXGradientType) {
 + (UIImage *)px_imageFromColor:(nonnull UIColor *)color size:(CGSize)size;
 
 /**
- 拉伸图片
+ 拉缩图片
 
  @param image 要拉伸的图片
  @param leftCap 宽度缩放系数
@@ -45,13 +47,20 @@ typedef NS_ENUM(NSInteger,PXGradientType) {
 + (UIImage *)px_resizeWithImage:(UIImage *)image leftCap:(CGFloat)leftCap topCap:(CGFloat)topCap;
 
 /**
- 拉伸图片
+ 拉缩图片
  
  @param leftCap 宽度缩放系数
  @param topCap 高度缩放系数
  @return 拉伸后的图片
  */
 - (UIImage *)px_resizeImageWithLeftCap:(CGFloat)leftCap topCap:(CGFloat)topCap;
+
+/**
+ 拉缩图片
+
+ @param size 拉缩后的尺寸
+ */
+- (UIImage *)px_scalImageToSize:(CGSize)size;
 
 /**
  生成渐变色图片
@@ -92,6 +101,15 @@ typedef NS_ENUM(NSInteger,PXGradientType) {
  */
 - (UIImage *)px_imageWaterWithWaterText:(NSString *)waterText waterTextColor:(UIColor *)waterTextColor waterTextFont:(UIFont *)waterTextFont waterFrame:(CGRect)waterRect;
 
+
+/**
+ 旋转图片
+
+ @param rotate 旋转角度，-为顺时针旋转，+为逆时针旋转
+ @param fit YES: new image's size is extend to fit all content.
+            NO: image's size will not change, content may be clipped.
+ */
+- (UIImage *)px_imageRotate:(CGFloat)rotate fitSize:(BOOL)fit;
 
 @end
 

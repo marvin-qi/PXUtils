@@ -11,27 +11,16 @@
 
 #define PXUtilsLazy(object, assignment) (object = object ?: assignment)
 
-#define PXWeakType(type)    __weak typeof(type) weak##type = type
-#define PXStrongType(type)  __strong typeof(type) type = weak##type
-#define PXBlockType(type)   __block typeof(type)  block##type = type
+#define PXUtilsWeakType(type)    __weak typeof(type) weak##type = type
+#define PXUtilsStrongType(type)  __strong typeof(type) type = weak##type
+#define PXUtilsBlockType(type)   __block typeof(type)  block##type = type
 
-#define PXAvailableVersion(version) @available(iOS version,*)
-#define PXAvailableiOS11            @available(iOS 11.0,*)
+#define PXUtilsAvailableVersion(version) @available(iOS version,*)
+#define PXUtilsAvailableiOS11            @available(iOS 11.0,*)
 
-#define PXNotificationCenter [NSNotificationCenter defaultCenter]
-#define PXUserDefaults       [NSUserDefaults standardUserDefaults]
-#define PXApplication        [UIApplication sharedApplication]
-
-//沙盒路径
-#define PXHomePath NSHomeDirectory()
-//获取沙盒 Document
-#define PXDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-//获取沙盒 Cache
-#define PXPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
-//获取沙盒 temp
-#define PXPathTemp NSTemporaryDirectory()
-//Library/Caches 文件路径
-#define PXFilePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
+#define PXUtilsNotificationCenter [NSNotificationCenter defaultCenter]
+#define PXUtilsUserDefaults       [NSUserDefaults standardUserDefaults]
+#define PXUtilsApplication        [UIApplication sharedApplication]
 
 /**
  DEBUG打印
@@ -48,14 +37,14 @@
  
  @param ClassName 要打印的类
  */
-#define PXLogPrivatePropertyName(ClassName) \
-unsigned int count = 0;\
-Ivar *ivarList = class_copyIvarList([NSClassFromString(ClassName) class], &count);\
-for (int i = 0; i<count; i++) {\
-Ivar ivar = ivarList[i];\
-PXUtilsLog(@"%s",ivar_getName(ivar));\
-}\
-free(ivarList)
+#define PXUtilsPrintPrivatePropertyName(ClassName) \
+    unsigned int count = 0;\
+    Ivar *ivarList = class_copyIvarList([NSClassFromString(ClassName) class], &count);\
+    for (int i = 0; i<count; i++) {\
+        Ivar ivar = ivarList[i];\
+            PXUtilsLog(@"%s",ivar_getName(ivar));\
+        }\
+    free(ivarList)
 
 
 #endif /* PXUtilsMacros_h */

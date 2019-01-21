@@ -44,6 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIImage *)px_cutImageWithFrame:(CGRect)frame;
 
+- (void)px_removeAllSubviews;
+
 @end
 
 NS_ASSUME_NONNULL_END
