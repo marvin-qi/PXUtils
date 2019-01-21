@@ -2,7 +2,7 @@
 //  PXUtilsMacros.h
 //  PXUtilsDemo
 //
-//  Created by Charles on 2019/1/17.
+//  Created by Charles on 2019/1/21.
 //  Copyright © 2019 Charles.Qi. All rights reserved.
 //
 
@@ -45,17 +45,17 @@
 
 /**
  打印类私有变量
-
+ 
  @param ClassName 要打印的类
  */
 #define PXLogPrivatePropertyName(ClassName) \
-    unsigned int count = 0;\
-    Ivar *ivarList = class_copyIvarList([NSClassFromString(ClassName) class], &count);\
-    for (int i = 0; i<count; i++) {\
-        Ivar ivar = ivarList[i];\
-        PXUtilsLog(@"%s",ivar_getName(ivar));\
-    }\
-    free(ivarList)
+unsigned int count = 0;\
+Ivar *ivarList = class_copyIvarList([NSClassFromString(ClassName) class], &count);\
+for (int i = 0; i<count; i++) {\
+Ivar ivar = ivarList[i];\
+PXUtilsLog(@"%s",ivar_getName(ivar));\
+}\
+free(ivarList)
 
 
 #endif /* PXUtilsMacros_h */

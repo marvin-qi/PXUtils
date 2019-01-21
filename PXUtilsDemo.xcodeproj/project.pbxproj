@@ -54,7 +54,7 @@
 		A60675E121F55B8C009B7533 /* PXUtilsConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUtilsConstant.m; sourceTree = "<group>"; };
 		A60675E221F55B8C009B7533 /* PXUtilsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsSingleton.h; sourceTree = "<group>"; };
 		A60675E321F55B8C009B7533 /* PXUtilsConstInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstInline.h; sourceTree = "<group>"; };
-		A60675E621F5636E009B7533 /* PXUtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsMacros.h; sourceTree = "<group>"; };
+		A60675E721F56775009B7533 /* PXUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsMacros.h; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 				A67A2DB521F0731E0001F39B /* PXKit */,
 				A67A2D5521F021710001F39B /* PXObject */,
 				A67A2D5621F0218B0001F39B /* PXUtils.h */,
-				A60675E621F5636E009B7533 /* PXUtilsMacros.h */,
+				A60675E721F56775009B7533 /* PXUtilsMacros.h */,
 				A60675E021F55B8C009B7533 /* PXUtilsConstant.h */,
 				A60675E121F55B8C009B7533 /* PXUtilsConstant.m */,
 				A60675E321F55B8C009B7533 /* PXUtilsConstInline.h */,
