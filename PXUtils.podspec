@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PXUtils"
-  s.version      = "1.9.1"
+  s.version      = "1.9.3"
   s.summary      = "iOS开发工具类"
 
   s.homepage     = "http://github.com/DemonArrow/PXUtils.git"
@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/DemonArrow/PXUtils.git", :tag => "#{s.version}" }
 
   s.source_files  = "PXUtils/*.{h,m}"
-  s.public_header_files = "PXUtils/PXUtils.h"
   s.subspec 'PXObject' do |ss|
     ss.source_files = "PXUtils/PXObject/**/*.{h,m}"
   end
