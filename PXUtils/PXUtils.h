@@ -9,7 +9,7 @@
 #ifndef PXUtils_h
 #define PXUtils_h
 
-//UIKit
+//PXKit
 #import "UIButton+PX.h"
 #import "UIColor+PX.h"
 #import "UIFont+PX.h"
@@ -20,13 +20,12 @@
 #import "UITextField+PX.h"
 #import "UITextView+PX.h"
 
-//NSObject
+//PXObject
 #import "NSArray+PX.h"
 #import "NSDate+PX.h"
 #import "NSString+PX.h"
 #import "PXObject.h"
 
-//PXDepend
 #import "PXUtilsMacros.h"
 #import "PXUtilsConstInline.h"
 #import "PXUtilsSingleton.h"

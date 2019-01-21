@@ -7,17 +7,23 @@
 //
 
 #import "UIFont+PX.h"
-#import "PXUtilsMacros.h"
+
+#define DEBUGLOG
+#ifdef DEBUGLOG
+#      define PXFontLog(fmt, ...) NSLog((@"Font" fmt), ##__VA_ARGS__);
+#else
+#      define PXFontLog(...)
+#endif
 
 @implementation UIFont (PX)
 
 + (void)px_showAllFonts{
     NSArray *familyNames = [UIFont familyNames];
     for( NSString *familyName in familyNames ){
-        PXUtilsLog(@"Family: %s \n", [familyName UTF8String] );
+        PXFontLog(@"Family: %s \n", [familyName UTF8String] );
         NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
         for( NSString *fontName in fontNames ){
-            PXUtilsLog(@"\tFont: %s \n", [fontName UTF8String] );
+            PXFontLog(@"\tFont: %s \n", [fontName UTF8String] );
         }
     }
 }

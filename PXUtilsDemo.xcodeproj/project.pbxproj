@@ -189,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				A606759321F30534009B7533 /* PXDebug */,
-				A67A2DB521F0731E0001F39B /* UIKit */,
-				A67A2D5521F021710001F39B /* NSObject */,
+				A67A2DB521F0731E0001F39B /* PXKit */,
+				A67A2D5521F021710001F39B /* PXObject */,
 				A67A2D5621F0218B0001F39B /* PXUtils.h */,
 				A60675E021F55B8C009B7533 /* PXUtilsConstant.h */,
 				A60675E121F55B8C009B7533 /* PXUtilsConstant.m */,
@@ -201,7 +201,7 @@
 			path = PXUtils;
 			sourceTree = SOURCE_ROOT;
 		};
-		A67A2D5521F021710001F39B /* NSObject */ = {
+		A67A2D5521F021710001F39B /* PXObject */ = {
 			isa = PBXGroup;
 			children = (
 				A606757E21F19FA9009B7533 /* NSObject */,
@@ -209,7 +209,7 @@
 				A67A2DAC21F073150001F39B /* NSDate */,
 				A67A2DAF21F073150001F39B /* NSString */,
 			);
-			path = NSObject;
+			path = PXObject;
 			sourceTree = "<group>";
 		};
 		A67A2DA921F073150001F39B /* NSArray */ = {
@@ -239,7 +239,7 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		A67A2DB521F0731E0001F39B /* UIKit */ = {
+		A67A2DB521F0731E0001F39B /* PXKit */ = {
 			isa = PBXGroup;
 			children = (
 				A67A2DBC21F0731E0001F39B /* UIButton */,
@@ -252,7 +252,7 @@
 				A67A2DC821F0731E0001F39B /* UITextView */,
 				A67A2DC221F0731E0001F39B /* UIView */,
 			);
-			path = UIKit;
+			path = PXKit;
 			sourceTree = "<group>";
 		};
 		A67A2DB621F0731E0001F39B /* UIImage */ = {

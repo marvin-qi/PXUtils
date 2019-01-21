@@ -8,10 +8,6 @@
 
 #import "UIView+PX.h"
 
-@interface UIView ()
-
-@end
-
 @implementation UIView (PX)
 
 - (CGFloat)left {

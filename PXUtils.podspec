@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PXUtils"
-  s.version      = "1.6.0"
+  s.version      = "1.7.0"
   s.summary      = "iOS开发工具类"
 
   s.homepage     = "http://github.com/DemonArrow/PXUtils.git"
@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
 
   s.source_files  = "PXUtils/*.{h.m}"
   s.public_header_files = "PXUtils/PXUtils.h"
-  s.subspec 'NSObject' do |ss|
-    ss.source_files = "PXUtils/NSObject/**/*.{h,m}"
+  s.subspec 'PXObject' do |ss|
+    ss.source_files = "PXUtils/PXObject/**/*.{h,m}"
   end
-  s.subspec 'UIKit' do |ss|
-    ss.source_files = "PXUtils/UIKit/**/*.{h,m}"
+  s.subspec 'PXKit' do |ss|
+    ss.source_files = "PXUtils/PXKit/**/*.{h,m}"
   end
   s.subspec 'PXDebug' do |ss|
     ss.source_files = "PXUtils/PXDebug/*.{h,m}"

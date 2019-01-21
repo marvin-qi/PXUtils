@@ -17,8 +17,11 @@
 
 + (void)load{
     [super load];
-    method_exchangeImplementations(class_getInstanceMethod(self, @selector(setText:)), class_getInstanceMethod(self, @selector(pxSetText:)));
-    method_exchangeImplementations(class_getInstanceMethod(self, @selector(setPlaceholder:)), class_getInstanceMethod(self, @selector(pxSetPlaceholder:)));
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        method_exchangeImplementations(class_getInstanceMethod(self, @selector(setText:)), class_getInstanceMethod(self, @selector(pxSetText:)));
+        method_exchangeImplementations(class_getInstanceMethod(self, @selector(setPlaceholder:)), class_getInstanceMethod(self, @selector(pxSetPlaceholder:)));
+    });
 }
 
 - (void)setMaxLength:(NSUInteger)maxLength{
