@@ -86,7 +86,7 @@
 		A654B5E121F6CB98000D2CBC /* PXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXObject.h; sourceTree = "<group>"; };
 		A654B5E221F6CB98000D2CBC /* NSDate+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PX.h"; sourceTree = "<group>"; };
 		A654B5E321F6CB98000D2CBC /* PXObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXObject.m; sourceTree = "<group>"; };
-		A654B5E821F6CD14000D2CBC /* PXUtilsConstBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstBlock.h; sourceTree = "<group>"; };
+		A654B5E921F6E667000D2CBC /* PXUtilsConstEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstEnum.h; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			path = PXSecurity;
 			sourceTree = "<group>";
 		};
-		A654B5B421F6C577000D2CBC /* PXCommon */ = {
+		A654B5B421F6C577000D2CBC /* PXConst */ = {
 			isa = PBXGroup;
 			children = (
 				A654B5B621F6C577000D2CBC /* PXUtilsColorInline.h */,
@@ -163,9 +163,9 @@
 				A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */,
 				A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */,
 				A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */,
-				A654B5E821F6CD14000D2CBC /* PXUtilsConstBlock.h */,
+				A654B5E921F6E667000D2CBC /* PXUtilsConstEnum.h */,
 			);
-			path = PXCommon;
+			path = PXConst;
 			sourceTree = "<group>";
 		};
 		A67A2D2B21F021180001F39B = {
@@ -210,7 +210,7 @@
 		A67A2D4D21F021710001F39B /* PXUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A654B5B421F6C577000D2CBC /* PXCommon */,
+				A654B5B421F6C577000D2CBC /* PXConst */,
 				A60675F121F5A147009B7533 /* PXSecurity */,
 				A606759321F30534009B7533 /* PXDebug */,
 				A67A2DB521F0731E0001F39B /* PXKit */,
