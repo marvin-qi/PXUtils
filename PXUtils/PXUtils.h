@@ -30,11 +30,11 @@
 #import "PXSecurity/NSString+Security.h"
 
 //PXConst
-#import "PXConst/PXUtilsMacros.h"
-#import "PXConst/PXUtilsColorInline.h"
-#import "PXConst/PXUtilsConstInline.h"
-#import "PXConst/PXUtilsConstant.h"
-#import "PXConst/PXUtilsConstEnum.h"
-#import "PXConst/PXUtilsSingleton.h"
+#import "PXUtilsMacros.h"
+#import "PXUtilsColorInline.h"
+#import "PXUtilsConstInline.h"
+#import "PXUtilsConstant.h"
+#import "PXUtilsConstEnum.h"
+#import "PXUtilsSingleton.h"
 
 #endif /* PXUtils_h */
