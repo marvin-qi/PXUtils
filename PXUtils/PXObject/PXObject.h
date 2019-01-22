@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "PXUtilsConstEnum.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param seconds 倒计时时间
  @param completed 回调
  */
-+ (dispatch_source_t)startTimeWithSeconds:(int)seconds completed:(nullable kPXUtilsCompletedIntValue)completed;
++ (dispatch_source_t)startTimeWithSeconds:(int)seconds completed:(nullable void(^)(BOOL completed, NSInteger intValue))completed;
 
 /**
  返回两个地理点直接的距离/m
