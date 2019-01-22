@@ -14,7 +14,7 @@
 /**
  是否是iPhone X以上的机型
  */
-#define PXUtilsIsX ([[UIApplication sharedApplication] statusBarFrame].size.height>20)
+#define PXUtilsIsIPhoneX ([[UIApplication sharedApplication] statusBarFrame].size.height>20)
 
 #define PXUtilsScreenScale       [[UIScreen mainScreen] scale]
 #define PXUtilsScreenBounds      [[UIScreen mainScreen] bounds]
@@ -25,63 +25,63 @@
  状态栏高度
  */
 static inline CGFloat PXUtilsStatusBarHeight(){
-    return (PXUtilsIsX ? 44.f : 20.f);
+    return (PXUtilsIsIPhoneX ? 44.f : 20.f);
 }
 
 /**
  导航栏高度，包含状态栏
  */
 static inline CGFloat PXUtilsNavBarHeight(){
-    return (PXUtilsIsX ? 88.f : 64.f);
+    return (PXUtilsIsIPhoneX ? 88.f : 64.f);
 }
 
 /**
  Tab栏高度，包含iPhone X控制条
  */
 static inline CGFloat PXUtilsTabBarHeight(){
-    return (PXUtilsIsX ? 83.f : 49.f);
+    return (PXUtilsIsIPhoneX ? 83.f : 49.f);
 }
 
 /**
  iPhone X控制条高度
  */
 static inline CGFloat PXUtilsIndicatorBarHeight(){
-    return (PXUtilsIsX ? 34.f : 0.f);
+    return (PXUtilsIsIPhoneX ? 34.f : 0.f);
 }
 
 /**
  键盘高度
  */
 static inline CGFloat PXUtilsKeyBoardHeight(){
-    return (PXUtilsIsX ? 291.f : 216.0f);
+    return (PXUtilsIsIPhoneX ? 291.f : 216.0f);
 }
 
 /**
  以iPhone6为参照的宽
  */
 static inline CGFloat PXUtilsWidthByIP6(CGFloat width){
-    return roundf(width * PXUtilsScreenWidth / 375.0);
+    return roundf(width * PXUtilsScreenHeight / 667.0);
 }
 
 /**
  以iPhone6为参照的高
  */
 static inline CGFloat PXUtilsHeightByIP6(CGFloat height){
-    return roundf(height * PXUtilsScreenHeight / 667.0);
+    return roundf(height * PXUtilsScreenWidth / 375.0);
 }
 
 /**
  以iPhone6P为参照的宽
  */
 static inline CGFloat PXUtilsWidthByIP6P(CGFloat width){
-    return roundf(width * PXUtilsScreenWidth / 414.0);
+    return roundf(width * PXUtilsScreenHeight / 736.0);
 }
 
 /**
  以iPhone6P为参照的高
  */
 static inline CGFloat PXUtilsHeightByIP6P(CGFloat height){
-    return roundf(height * PXUtilsScreenHeight / 736.0);
+    return roundf(height * PXUtilsScreenWidth / 414.0);
 }
 
 /**
