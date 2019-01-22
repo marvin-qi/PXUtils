@@ -182,4 +182,67 @@ static inline NSURL *PXUtilsFilePath(){
     return [[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:TRUE error:nil];
 }
 
+/**
+ App名字
+ */
+static inline NSString *PXUtilsAppName(){
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
+}
+
+/**
+ App版本号
+ */
+static inline NSString *PXUtilsAppVersion(){
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
+/**
+ App Build号
+ */
+static inline NSString *PXUtilsAppBuildVersion(){
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+}
+
+/**
+ 设备名称
+ */
+static inline NSString *PXUtilsSystemName(){
+    return [UIDevice currentDevice].systemName;
+}
+
+/**
+ iOS版本
+ */
+static inline NSString *PXUtilsSystemVersion(){
+    return [UIDevice currentDevice].systemVersion;
+}
+
+/**
+ UUID
+ */
+static inline NSString *PXUtilsUuid(){
+    return [UIDevice currentDevice].identifierForVendor.UUIDString;
+}
+
+/**
+ 设备别名
+ */
+static inline NSString *PXUtilsDeviceName(){
+    return [UIDevice currentDevice].name;
+}
+
+/**
+ 设备型号
+ */
+static inline NSString *PXUtilsDeviceModel(){
+    return [UIDevice currentDevice].model;
+}
+
+/**
+ 设备地方型号(国际化)
+ */
+static inline NSString *PXUtilsLocalizedModel(){
+    return [UIDevice currentDevice].localizedModel;
+}
+
 #endif /* PXUtilsConstInline_h */

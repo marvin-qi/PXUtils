@@ -10,7 +10,7 @@
 #define PXUtilsSingleton_h
 
 // .h文件
-#define PXUtilsSingletonH(name) + (instancetype)shared##name;
+#define PXUtilsSingletonH(name) + (instancetype)share##name;
 
 // .m文件
 #if __has_feature(objc_arc)
@@ -26,7 +26,7 @@ static id _instace; \
     return _instace; \
 } \
 \
-+ (instancetype)shared##name { \
++ (instancetype)share##name { \
     static dispatch_once_t onceToken; \
     dispatch_once(&onceToken, ^{ \
         _instace = [[self alloc] init]; \
@@ -40,7 +40,7 @@ static id _instace; \
 
 #else
 
-#define PXSingletonM(name) \
+#define PXUtilsSingletonM(name) \
 static id _instace; \
 \
 + (id)allocWithZone:(struct _NSZone *)zone { \
@@ -51,7 +51,7 @@ static id _instace; \
     return _instace; \
 } \
 \
-+ (instancetype)shared##name { \
++ (instancetype)share##name { \
     static dispatch_once_t onceToken; \
     dispatch_once(&onceToken, ^{ \
         _instace = [[self alloc] init]; \

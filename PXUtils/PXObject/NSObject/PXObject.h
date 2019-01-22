@@ -42,16 +42,6 @@ typedef void(^kCompletedSecond)(BOOL completed, NSInteger seconds);
  */
 + (CGFloat)distanceBetweenLat1:(CGFloat)lat1 lng1:(CGFloat)lng1 lat2:(CGFloat)lat2 lng2:(CGFloat)lng2;
 
-+ (NSString *)appName;///< App名字
-+ (NSString *)appVersion;///< App版本号
-+ (NSString *)appBuildVersion;///< App Build号
-+ (NSString *)systemName;///< 设备名称
-+ (NSString *)systemVersion;///< iOS版本
-+ (NSString *)uuid;///< UUID
-+ (NSString *)deviceName;///< 设备别名
-+ (NSString *)deviceModel;///< 设备型号
-+ (NSString *)localizedModel;///< 设备地方型号(国际化)
-
 @end
 
 NS_ASSUME_NONNULL_END

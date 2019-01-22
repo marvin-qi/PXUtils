@@ -65,40 +65,4 @@
     return distance;
 }
 
-+ (NSString *)appName{
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
-}
-
-+ (NSString *)appVersion{
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-}
-
-+ (NSString *)appBuildVersion{
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
-}
-
-+ (NSString *)systemName{
-    return [UIDevice currentDevice].systemName;
-}
-
-+ (NSString *)systemVersion{
-    return [UIDevice currentDevice].systemVersion;
-}
-
-+ (NSString *)uuid{
-    return [UIDevice currentDevice].identifierForVendor.UUIDString;
-}
-
-+ (NSString *)deviceName{
-    return [UIDevice currentDevice].name;
-}
-
-+ (NSString *)deviceModel{
-    return [UIDevice currentDevice].model;
-}
-
-+ (NSString *)localizedModel{
-    return [UIDevice currentDevice].localizedModel;
-}
-
 @end

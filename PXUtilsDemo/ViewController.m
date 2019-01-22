@@ -46,8 +46,8 @@
 //    [tv px_limitMaxLength:tv.text.length];
     [tv setFrame:CGRectMake(100, 150, 200, 300)];
     
-    User *user0 = [User sharedInstance];
-    User *user1 = [User sharedInstance];
+    User *user0 = [User shareInstance];
+    User *user1 = [User shareInstance];
     
     PXUtilsLog(@"%@===%@",user0,user1);
     
