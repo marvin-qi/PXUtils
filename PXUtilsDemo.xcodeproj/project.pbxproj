@@ -30,9 +30,9 @@
 		A60675D621F3218E009B7533 /* NSDate+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DAE21F073150001F39B /* NSDate+PX.m */; };
 		A60675D721F3218E009B7533 /* NSString+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DB021F073150001F39B /* NSString+PX.m */; };
 		A60675D821F321BF009B7533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2D4621F021190001F39B /* main.m */; };
-		A60675E521F55B8C009B7533 /* PXUtilsConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675E121F55B8C009B7533 /* PXUtilsConstant.m */; };
 		A60675F421F5A156009B7533 /* NSString+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675F321F5A156009B7533 /* NSString+Security.m */; };
 		A60675F721F5A16C009B7533 /* NSData+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675F621F5A16C009B7533 /* NSData+Security.m */; };
+		A654B5BB21F6C577000D2CBC /* PXUtilsConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5B721F6C577000D2CBC /* PXUtilsConstant.m */; };
 		A67A2D4121F021190001F39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4021F021190001F39B /* Assets.xcassets */; };
 		A67A2D4421F021190001F39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4221F021190001F39B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -52,16 +52,17 @@
 		A606759E21F30572009B7533 /* PXDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXDebug.m; sourceTree = "<group>"; };
 		A60675A021F3173C009B7533 /* TwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoVC.h; sourceTree = "<group>"; };
 		A60675A121F3173C009B7533 /* TwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoVC.m; sourceTree = "<group>"; };
-		A60675E021F55B8C009B7533 /* PXUtilsConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstant.h; sourceTree = "<group>"; };
-		A60675E121F55B8C009B7533 /* PXUtilsConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUtilsConstant.m; sourceTree = "<group>"; };
-		A60675E221F55B8C009B7533 /* PXUtilsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsSingleton.h; sourceTree = "<group>"; };
-		A60675E321F55B8C009B7533 /* PXUtilsConstInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstInline.h; sourceTree = "<group>"; };
-		A60675E721F56775009B7533 /* PXUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsMacros.h; sourceTree = "<group>"; };
 		A60675F221F5A156009B7533 /* NSString+Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Security.h"; sourceTree = "<group>"; };
 		A60675F321F5A156009B7533 /* NSString+Security.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Security.m"; sourceTree = "<group>"; };
 		A60675F521F5A16C009B7533 /* NSData+Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Security.h"; sourceTree = "<group>"; };
 		A60675F621F5A16C009B7533 /* NSData+Security.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Security.m"; sourceTree = "<group>"; };
-		A654B5B221F6C091000D2CBC /* PXUtilsColorInline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsColorInline.h; sourceTree = "<group>"; };
+		A654B5B521F6C577000D2CBC /* PXUtilsConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstant.h; sourceTree = "<group>"; };
+		A654B5B621F6C577000D2CBC /* PXUtilsColorInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsColorInline.h; sourceTree = "<group>"; };
+		A654B5B721F6C577000D2CBC /* PXUtilsConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUtilsConstant.m; sourceTree = "<group>"; };
+		A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsMacros.h; sourceTree = "<group>"; };
+		A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsSingleton.h; sourceTree = "<group>"; };
+		A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstInline.h; sourceTree = "<group>"; };
+		A654B5C021F6C744000D2CBC /* PXUtilsConstBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstBlock.h; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -162,6 +163,20 @@
 			path = PXSecurity;
 			sourceTree = "<group>";
 		};
+		A654B5B421F6C577000D2CBC /* PXCommon */ = {
+			isa = PBXGroup;
+			children = (
+				A654B5B621F6C577000D2CBC /* PXUtilsColorInline.h */,
+				A654B5B521F6C577000D2CBC /* PXUtilsConstant.h */,
+				A654B5B721F6C577000D2CBC /* PXUtilsConstant.m */,
+				A654B5C021F6C744000D2CBC /* PXUtilsConstBlock.h */,
+				A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */,
+				A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */,
+				A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */,
+			);
+			path = PXCommon;
+			sourceTree = "<group>";
+		};
 		A67A2D2B21F021180001F39B = {
 			isa = PBXGroup;
 			children = (
@@ -204,17 +219,12 @@
 		A67A2D4D21F021710001F39B /* PXUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A654B5B421F6C577000D2CBC /* PXCommon */,
 				A60675F121F5A147009B7533 /* PXSecurity */,
 				A606759321F30534009B7533 /* PXDebug */,
 				A67A2DB521F0731E0001F39B /* PXKit */,
 				A67A2D5521F021710001F39B /* PXObject */,
 				A67A2D5621F0218B0001F39B /* PXUtils.h */,
-				A60675E721F56775009B7533 /* PXUtilsMacros.h */,
-				A60675E021F55B8C009B7533 /* PXUtilsConstant.h */,
-				A60675E121F55B8C009B7533 /* PXUtilsConstant.m */,
-				A60675E321F55B8C009B7533 /* PXUtilsConstInline.h */,
-				A60675E221F55B8C009B7533 /* PXUtilsSingleton.h */,
-				A654B5B221F6C091000D2CBC /* PXUtilsColorInline.h */,
 			);
 			path = PXUtils;
 			sourceTree = SOURCE_ROOT;
@@ -488,7 +498,6 @@
 				A60675D821F321BF009B7533 /* main.m in Sources */,
 				A60675C321F3218E009B7533 /* AppDelegate.m in Sources */,
 				A60675C421F3218E009B7533 /* ViewController.m in Sources */,
-				A60675E521F55B8C009B7533 /* PXUtilsConstant.m in Sources */,
 				A60675C521F3218E009B7533 /* TwoVC.m in Sources */,
 				A60675C621F3218E009B7533 /* User.m in Sources */,
 				A60675C821F3218E009B7533 /* PXDebug.m in Sources */,
@@ -509,6 +518,7 @@
 				A60675D521F3218E009B7533 /* NSArray+PX.m in Sources */,
 				A60675D621F3218E009B7533 /* NSDate+PX.m in Sources */,
 				A60675D721F3218E009B7533 /* NSString+PX.m in Sources */,
+				A654B5BB21F6C577000D2CBC /* PXUtilsConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
