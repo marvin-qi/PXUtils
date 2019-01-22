@@ -14,6 +14,7 @@
 
 #import "PXDebug.h"
 #import "PXUtilsMacros.h"
+#import "PXUtilsColorInline.h"
 #import "PXUtilsConstInline.h"
 
 @interface PXDebug ()
