@@ -16,31 +16,29 @@
 		A60675C821F3218E009B7533 /* PXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A606759E21F30572009B7533 /* PXDebug.m */; };
 		A60675C921F3218E009B7533 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = A606759821F30554009B7533 /* UIView+Debug.m */; };
 		A60675CA21F3218E009B7533 /* UIViewController+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = A606759B21F30565009B7533 /* UIViewController+Debug.m */; };
-		A60675CB21F3218E009B7533 /* UIButton+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DBD21F0731E0001F39B /* UIButton+PX.m */; };
-		A60675CC21F3218E009B7533 /* UIColor+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DC021F0731E0001F39B /* UIColor+PX.m */; };
-		A60675CD21F3218E009B7533 /* UIFont+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DC621F0731E0001F39B /* UIFont+PX.m */; };
-		A60675CE21F3218E009B7533 /* UIImage+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DB821F0731E0001F39B /* UIImage+PX.m */; };
-		A60675CF21F3218E009B7533 /* UIImageView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DCD21F0731E0001F39B /* UIImageView+PX.m */; };
-		A60675D021F3218E009B7533 /* UILabel+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DBB21F0731E0001F39B /* UILabel+PX.m */; };
-		A60675D121F3218E009B7533 /* UITextField+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DD121F0731E0001F39B /* UITextField+PX.m */; };
-		A60675D221F3218E009B7533 /* UITextView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DC921F0731E0001F39B /* UITextView+PX.m */; };
-		A60675D321F3218E009B7533 /* UIView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DC421F0731E0001F39B /* UIView+PX.m */; };
-		A60675D421F3218E009B7533 /* PXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A606758021F19FA9009B7533 /* PXObject.m */; };
-		A60675D521F3218E009B7533 /* NSArray+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DAB21F073150001F39B /* NSArray+PX.m */; };
-		A60675D621F3218E009B7533 /* NSDate+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DAE21F073150001F39B /* NSDate+PX.m */; };
-		A60675D721F3218E009B7533 /* NSString+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2DB021F073150001F39B /* NSString+PX.m */; };
 		A60675D821F321BF009B7533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A2D4621F021190001F39B /* main.m */; };
 		A60675F421F5A156009B7533 /* NSString+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675F321F5A156009B7533 /* NSString+Security.m */; };
 		A60675F721F5A16C009B7533 /* NSData+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = A60675F621F5A16C009B7533 /* NSData+Security.m */; };
 		A654B5BB21F6C577000D2CBC /* PXUtilsConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5B721F6C577000D2CBC /* PXUtilsConstant.m */; };
+		A654B5D321F6CB8D000D2CBC /* UIFont+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C221F6CB8C000D2CBC /* UIFont+PX.m */; };
+		A654B5D421F6CB8D000D2CBC /* UITextView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C421F6CB8C000D2CBC /* UITextView+PX.m */; };
+		A654B5D521F6CB8D000D2CBC /* UIView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C721F6CB8C000D2CBC /* UIView+PX.m */; };
+		A654B5D621F6CB8D000D2CBC /* UIImageView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C821F6CB8C000D2CBC /* UIImageView+PX.m */; };
+		A654B5D721F6CB8D000D2CBC /* UIButton+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C921F6CB8C000D2CBC /* UIButton+PX.m */; };
+		A654B5D821F6CB8D000D2CBC /* UIImage+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5CA21F6CB8C000D2CBC /* UIImage+PX.m */; };
+		A654B5D921F6CB8D000D2CBC /* UITextField+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5CC21F6CB8C000D2CBC /* UITextField+PX.m */; };
+		A654B5DA21F6CB8D000D2CBC /* UIColor+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5D021F6CB8D000D2CBC /* UIColor+PX.m */; };
+		A654B5DB21F6CB8D000D2CBC /* UILabel+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5D121F6CB8D000D2CBC /* UILabel+PX.m */; };
+		A654B5E421F6CB98000D2CBC /* NSString+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5DD21F6CB98000D2CBC /* NSString+PX.m */; };
+		A654B5E521F6CB98000D2CBC /* NSArray+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5DE21F6CB98000D2CBC /* NSArray+PX.m */; };
+		A654B5E621F6CB98000D2CBC /* NSDate+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5DF21F6CB98000D2CBC /* NSDate+PX.m */; };
+		A654B5E721F6CB98000D2CBC /* PXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5E321F6CB98000D2CBC /* PXObject.m */; };
 		A67A2D4121F021190001F39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4021F021190001F39B /* Assets.xcassets */; };
 		A67A2D4421F021190001F39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A2D4221F021190001F39B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24F1C7C8D2470C4E48EA9FF7 /* Pods-PXUtilsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXUtilsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PXUtilsDemo/Pods-PXUtilsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A606758021F19FA9009B7533 /* PXObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXObject.m; sourceTree = "<group>"; };
-		A606758221F19FA9009B7533 /* PXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXObject.h; sourceTree = "<group>"; };
 		A606758921F1C755009B7533 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A606758A21F1C755009B7533 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A606759121F2EE0D009B7533 /* yahei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yahei.ttf; sourceTree = "<group>"; };
@@ -63,6 +61,32 @@
 		A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsSingleton.h; sourceTree = "<group>"; };
 		A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstInline.h; sourceTree = "<group>"; };
 		A654B5C021F6C744000D2CBC /* PXUtilsConstBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstBlock.h; sourceTree = "<group>"; };
+		A654B5C121F6CB8C000D2CBC /* UIFont+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+PX.h"; sourceTree = "<group>"; };
+		A654B5C221F6CB8C000D2CBC /* UIFont+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PX.m"; sourceTree = "<group>"; };
+		A654B5C321F6CB8C000D2CBC /* UITextView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PX.h"; sourceTree = "<group>"; };
+		A654B5C421F6CB8C000D2CBC /* UITextView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PX.m"; sourceTree = "<group>"; };
+		A654B5C521F6CB8C000D2CBC /* UIImageView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PX.h"; sourceTree = "<group>"; };
+		A654B5C621F6CB8C000D2CBC /* UITextField+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PX.h"; sourceTree = "<group>"; };
+		A654B5C721F6CB8C000D2CBC /* UIView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PX.m"; sourceTree = "<group>"; };
+		A654B5C821F6CB8C000D2CBC /* UIImageView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PX.m"; sourceTree = "<group>"; };
+		A654B5C921F6CB8C000D2CBC /* UIButton+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PX.m"; sourceTree = "<group>"; };
+		A654B5CA21F6CB8C000D2CBC /* UIImage+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PX.m"; sourceTree = "<group>"; };
+		A654B5CB21F6CB8C000D2CBC /* UIColor+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PX.h"; sourceTree = "<group>"; };
+		A654B5CC21F6CB8C000D2CBC /* UITextField+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PX.m"; sourceTree = "<group>"; };
+		A654B5CD21F6CB8C000D2CBC /* UILabel+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+PX.h"; sourceTree = "<group>"; };
+		A654B5CE21F6CB8D000D2CBC /* UIImage+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PX.h"; sourceTree = "<group>"; };
+		A654B5CF21F6CB8D000D2CBC /* UIButton+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PX.h"; sourceTree = "<group>"; };
+		A654B5D021F6CB8D000D2CBC /* UIColor+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PX.m"; sourceTree = "<group>"; };
+		A654B5D121F6CB8D000D2CBC /* UILabel+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PX.m"; sourceTree = "<group>"; };
+		A654B5D221F6CB8D000D2CBC /* UIView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PX.h"; sourceTree = "<group>"; };
+		A654B5DC21F6CB98000D2CBC /* NSString+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PX.h"; sourceTree = "<group>"; };
+		A654B5DD21F6CB98000D2CBC /* NSString+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PX.m"; sourceTree = "<group>"; };
+		A654B5DE21F6CB98000D2CBC /* NSArray+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PX.m"; sourceTree = "<group>"; };
+		A654B5DF21F6CB98000D2CBC /* NSDate+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PX.m"; sourceTree = "<group>"; };
+		A654B5E021F6CB98000D2CBC /* NSArray+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PX.h"; sourceTree = "<group>"; };
+		A654B5E121F6CB98000D2CBC /* PXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXObject.h; sourceTree = "<group>"; };
+		A654B5E221F6CB98000D2CBC /* NSDate+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PX.h"; sourceTree = "<group>"; };
+		A654B5E321F6CB98000D2CBC /* PXObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXObject.m; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,30 +97,6 @@
 		A67A2D4521F021190001F39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A67A2D4621F021190001F39B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A67A2D5621F0218B0001F39B /* PXUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtils.h; sourceTree = "<group>"; };
-		A67A2DAA21F073150001F39B /* NSArray+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PX.h"; sourceTree = "<group>"; };
-		A67A2DAB21F073150001F39B /* NSArray+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PX.m"; sourceTree = "<group>"; };
-		A67A2DAD21F073150001F39B /* NSDate+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PX.h"; sourceTree = "<group>"; };
-		A67A2DAE21F073150001F39B /* NSDate+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PX.m"; sourceTree = "<group>"; };
-		A67A2DB021F073150001F39B /* NSString+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PX.m"; sourceTree = "<group>"; };
-		A67A2DB121F073150001F39B /* NSString+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PX.h"; sourceTree = "<group>"; };
-		A67A2DB721F0731E0001F39B /* UIImage+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PX.h"; sourceTree = "<group>"; };
-		A67A2DB821F0731E0001F39B /* UIImage+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PX.m"; sourceTree = "<group>"; };
-		A67A2DBA21F0731E0001F39B /* UILabel+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+PX.h"; sourceTree = "<group>"; };
-		A67A2DBB21F0731E0001F39B /* UILabel+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PX.m"; sourceTree = "<group>"; };
-		A67A2DBD21F0731E0001F39B /* UIButton+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PX.m"; sourceTree = "<group>"; };
-		A67A2DBE21F0731E0001F39B /* UIButton+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PX.h"; sourceTree = "<group>"; };
-		A67A2DC021F0731E0001F39B /* UIColor+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PX.m"; sourceTree = "<group>"; };
-		A67A2DC121F0731E0001F39B /* UIColor+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PX.h"; sourceTree = "<group>"; };
-		A67A2DC321F0731E0001F39B /* UIView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PX.h"; sourceTree = "<group>"; };
-		A67A2DC421F0731E0001F39B /* UIView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PX.m"; sourceTree = "<group>"; };
-		A67A2DC621F0731E0001F39B /* UIFont+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PX.m"; sourceTree = "<group>"; };
-		A67A2DC721F0731E0001F39B /* UIFont+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+PX.h"; sourceTree = "<group>"; };
-		A67A2DC921F0731E0001F39B /* UITextView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PX.m"; sourceTree = "<group>"; };
-		A67A2DCA21F0731E0001F39B /* UITextView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PX.h"; sourceTree = "<group>"; };
-		A67A2DCC21F0731E0001F39B /* UIImageView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PX.h"; sourceTree = "<group>"; };
-		A67A2DCD21F0731E0001F39B /* UIImageView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PX.m"; sourceTree = "<group>"; };
-		A67A2DD021F0731E0001F39B /* UITextField+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PX.h"; sourceTree = "<group>"; };
-		A67A2DD121F0731E0001F39B /* UITextField+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PX.m"; sourceTree = "<group>"; };
 		D9F97CCB37640DBA8091C37E /* Pods-PXUtilsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXUtilsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PXUtilsDemo/Pods-PXUtilsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F55317D0710A4E8339E01CEE /* Pods_PXUtilsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PXUtilsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,15 +120,6 @@
 				24F1C7C8D2470C4E48EA9FF7 /* Pods-PXUtilsDemo.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A606757E21F19FA9009B7533 /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				A606758221F19FA9009B7533 /* PXObject.h */,
-				A606758021F19FA9009B7533 /* PXObject.m */,
-			);
-			path = NSObject;
 			sourceTree = "<group>";
 		};
 		A606759021F2EE0D009B7533 /* Resource */ = {
@@ -232,136 +223,41 @@
 		A67A2D5521F021710001F39B /* PXObject */ = {
 			isa = PBXGroup;
 			children = (
-				A606757E21F19FA9009B7533 /* NSObject */,
-				A67A2DA921F073150001F39B /* NSArray */,
-				A67A2DAC21F073150001F39B /* NSDate */,
-				A67A2DAF21F073150001F39B /* NSString */,
+				A654B5E021F6CB98000D2CBC /* NSArray+PX.h */,
+				A654B5DE21F6CB98000D2CBC /* NSArray+PX.m */,
+				A654B5E221F6CB98000D2CBC /* NSDate+PX.h */,
+				A654B5DF21F6CB98000D2CBC /* NSDate+PX.m */,
+				A654B5DC21F6CB98000D2CBC /* NSString+PX.h */,
+				A654B5DD21F6CB98000D2CBC /* NSString+PX.m */,
+				A654B5E121F6CB98000D2CBC /* PXObject.h */,
+				A654B5E321F6CB98000D2CBC /* PXObject.m */,
 			);
 			path = PXObject;
-			sourceTree = "<group>";
-		};
-		A67A2DA921F073150001F39B /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DAA21F073150001F39B /* NSArray+PX.h */,
-				A67A2DAB21F073150001F39B /* NSArray+PX.m */,
-			);
-			path = NSArray;
-			sourceTree = "<group>";
-		};
-		A67A2DAC21F073150001F39B /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DAD21F073150001F39B /* NSDate+PX.h */,
-				A67A2DAE21F073150001F39B /* NSDate+PX.m */,
-			);
-			path = NSDate;
-			sourceTree = "<group>";
-		};
-		A67A2DAF21F073150001F39B /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DB121F073150001F39B /* NSString+PX.h */,
-				A67A2DB021F073150001F39B /* NSString+PX.m */,
-			);
-			path = NSString;
 			sourceTree = "<group>";
 		};
 		A67A2DB521F0731E0001F39B /* PXKit */ = {
 			isa = PBXGroup;
 			children = (
-				A67A2DBC21F0731E0001F39B /* UIButton */,
-				A67A2DBF21F0731E0001F39B /* UIColor */,
-				A67A2DC521F0731E0001F39B /* UIFont */,
-				A67A2DB621F0731E0001F39B /* UIImage */,
-				A67A2DCB21F0731E0001F39B /* UIImageView */,
-				A67A2DB921F0731E0001F39B /* UILabel */,
-				A67A2DCF21F0731E0001F39B /* UITextField */,
-				A67A2DC821F0731E0001F39B /* UITextView */,
-				A67A2DC221F0731E0001F39B /* UIView */,
+				A654B5CF21F6CB8D000D2CBC /* UIButton+PX.h */,
+				A654B5C921F6CB8C000D2CBC /* UIButton+PX.m */,
+				A654B5CB21F6CB8C000D2CBC /* UIColor+PX.h */,
+				A654B5D021F6CB8D000D2CBC /* UIColor+PX.m */,
+				A654B5C121F6CB8C000D2CBC /* UIFont+PX.h */,
+				A654B5C221F6CB8C000D2CBC /* UIFont+PX.m */,
+				A654B5CE21F6CB8D000D2CBC /* UIImage+PX.h */,
+				A654B5CA21F6CB8C000D2CBC /* UIImage+PX.m */,
+				A654B5C521F6CB8C000D2CBC /* UIImageView+PX.h */,
+				A654B5C821F6CB8C000D2CBC /* UIImageView+PX.m */,
+				A654B5CD21F6CB8C000D2CBC /* UILabel+PX.h */,
+				A654B5D121F6CB8D000D2CBC /* UILabel+PX.m */,
+				A654B5C621F6CB8C000D2CBC /* UITextField+PX.h */,
+				A654B5CC21F6CB8C000D2CBC /* UITextField+PX.m */,
+				A654B5C321F6CB8C000D2CBC /* UITextView+PX.h */,
+				A654B5C421F6CB8C000D2CBC /* UITextView+PX.m */,
+				A654B5D221F6CB8D000D2CBC /* UIView+PX.h */,
+				A654B5C721F6CB8C000D2CBC /* UIView+PX.m */,
 			);
 			path = PXKit;
-			sourceTree = "<group>";
-		};
-		A67A2DB621F0731E0001F39B /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DB721F0731E0001F39B /* UIImage+PX.h */,
-				A67A2DB821F0731E0001F39B /* UIImage+PX.m */,
-			);
-			path = UIImage;
-			sourceTree = "<group>";
-		};
-		A67A2DB921F0731E0001F39B /* UILabel */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DBA21F0731E0001F39B /* UILabel+PX.h */,
-				A67A2DBB21F0731E0001F39B /* UILabel+PX.m */,
-			);
-			path = UILabel;
-			sourceTree = "<group>";
-		};
-		A67A2DBC21F0731E0001F39B /* UIButton */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DBE21F0731E0001F39B /* UIButton+PX.h */,
-				A67A2DBD21F0731E0001F39B /* UIButton+PX.m */,
-			);
-			path = UIButton;
-			sourceTree = "<group>";
-		};
-		A67A2DBF21F0731E0001F39B /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DC121F0731E0001F39B /* UIColor+PX.h */,
-				A67A2DC021F0731E0001F39B /* UIColor+PX.m */,
-			);
-			path = UIColor;
-			sourceTree = "<group>";
-		};
-		A67A2DC221F0731E0001F39B /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DC321F0731E0001F39B /* UIView+PX.h */,
-				A67A2DC421F0731E0001F39B /* UIView+PX.m */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		A67A2DC521F0731E0001F39B /* UIFont */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DC721F0731E0001F39B /* UIFont+PX.h */,
-				A67A2DC621F0731E0001F39B /* UIFont+PX.m */,
-			);
-			path = UIFont;
-			sourceTree = "<group>";
-		};
-		A67A2DC821F0731E0001F39B /* UITextView */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DCA21F0731E0001F39B /* UITextView+PX.h */,
-				A67A2DC921F0731E0001F39B /* UITextView+PX.m */,
-			);
-			path = UITextView;
-			sourceTree = "<group>";
-		};
-		A67A2DCB21F0731E0001F39B /* UIImageView */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DCC21F0731E0001F39B /* UIImageView+PX.h */,
-				A67A2DCD21F0731E0001F39B /* UIImageView+PX.m */,
-			);
-			path = UIImageView;
-			sourceTree = "<group>";
-		};
-		A67A2DCF21F0731E0001F39B /* UITextField */ = {
-			isa = PBXGroup;
-			children = (
-				A67A2DD021F0731E0001F39B /* UITextField+PX.h */,
-				A67A2DD121F0731E0001F39B /* UITextField+PX.m */,
-			);
-			path = UITextField;
 			sourceTree = "<group>";
 		};
 		FFB563FBAEE847AC69E036A1 /* Frameworks */ = {
@@ -495,30 +391,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A654B5E521F6CB98000D2CBC /* NSArray+PX.m in Sources */,
 				A60675D821F321BF009B7533 /* main.m in Sources */,
 				A60675C321F3218E009B7533 /* AppDelegate.m in Sources */,
+				A654B5E621F6CB98000D2CBC /* NSDate+PX.m in Sources */,
+				A654B5E721F6CB98000D2CBC /* PXObject.m in Sources */,
+				A654B5D321F6CB8D000D2CBC /* UIFont+PX.m in Sources */,
+				A654B5D921F6CB8D000D2CBC /* UITextField+PX.m in Sources */,
+				A654B5E421F6CB98000D2CBC /* NSString+PX.m in Sources */,
 				A60675C421F3218E009B7533 /* ViewController.m in Sources */,
 				A60675C521F3218E009B7533 /* TwoVC.m in Sources */,
+				A654B5D721F6CB8D000D2CBC /* UIButton+PX.m in Sources */,
+				A654B5D421F6CB8D000D2CBC /* UITextView+PX.m in Sources */,
 				A60675C621F3218E009B7533 /* User.m in Sources */,
+				A654B5D821F6CB8D000D2CBC /* UIImage+PX.m in Sources */,
 				A60675C821F3218E009B7533 /* PXDebug.m in Sources */,
+				A654B5D621F6CB8D000D2CBC /* UIImageView+PX.m in Sources */,
+				A654B5DB21F6CB8D000D2CBC /* UILabel+PX.m in Sources */,
 				A60675C921F3218E009B7533 /* UIView+Debug.m in Sources */,
 				A60675CA21F3218E009B7533 /* UIViewController+Debug.m in Sources */,
+				A654B5D521F6CB8D000D2CBC /* UIView+PX.m in Sources */,
 				A60675F421F5A156009B7533 /* NSString+Security.m in Sources */,
 				A60675F721F5A16C009B7533 /* NSData+Security.m in Sources */,
-				A60675CB21F3218E009B7533 /* UIButton+PX.m in Sources */,
-				A60675CC21F3218E009B7533 /* UIColor+PX.m in Sources */,
-				A60675CD21F3218E009B7533 /* UIFont+PX.m in Sources */,
-				A60675CE21F3218E009B7533 /* UIImage+PX.m in Sources */,
-				A60675CF21F3218E009B7533 /* UIImageView+PX.m in Sources */,
-				A60675D021F3218E009B7533 /* UILabel+PX.m in Sources */,
-				A60675D121F3218E009B7533 /* UITextField+PX.m in Sources */,
-				A60675D221F3218E009B7533 /* UITextView+PX.m in Sources */,
-				A60675D321F3218E009B7533 /* UIView+PX.m in Sources */,
-				A60675D421F3218E009B7533 /* PXObject.m in Sources */,
-				A60675D521F3218E009B7533 /* NSArray+PX.m in Sources */,
-				A60675D621F3218E009B7533 /* NSDate+PX.m in Sources */,
-				A60675D721F3218E009B7533 /* NSString+PX.m in Sources */,
 				A654B5BB21F6C577000D2CBC /* PXUtilsConstant.m in Sources */,
+				A654B5DA21F6CB8D000D2CBC /* UIColor+PX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
