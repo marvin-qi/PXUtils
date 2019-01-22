@@ -60,7 +60,6 @@
 		A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsMacros.h; sourceTree = "<group>"; };
 		A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsSingleton.h; sourceTree = "<group>"; };
 		A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstInline.h; sourceTree = "<group>"; };
-		A654B5C021F6C744000D2CBC /* PXUtilsConstBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstBlock.h; sourceTree = "<group>"; };
 		A654B5C121F6CB8C000D2CBC /* UIFont+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+PX.h"; sourceTree = "<group>"; };
 		A654B5C221F6CB8C000D2CBC /* UIFont+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PX.m"; sourceTree = "<group>"; };
 		A654B5C321F6CB8C000D2CBC /* UITextView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PX.h"; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		A654B5E121F6CB98000D2CBC /* PXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXObject.h; sourceTree = "<group>"; };
 		A654B5E221F6CB98000D2CBC /* NSDate+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PX.h"; sourceTree = "<group>"; };
 		A654B5E321F6CB98000D2CBC /* PXObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXObject.m; sourceTree = "<group>"; };
+		A654B5E821F6CD14000D2CBC /* PXUtilsConstBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstBlock.h; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -160,10 +160,10 @@
 				A654B5B621F6C577000D2CBC /* PXUtilsColorInline.h */,
 				A654B5B521F6C577000D2CBC /* PXUtilsConstant.h */,
 				A654B5B721F6C577000D2CBC /* PXUtilsConstant.m */,
-				A654B5C021F6C744000D2CBC /* PXUtilsConstBlock.h */,
 				A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */,
 				A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */,
 				A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */,
+				A654B5E821F6CD14000D2CBC /* PXUtilsConstBlock.h */,
 			);
 			path = PXCommon;
 			sourceTree = "<group>";
