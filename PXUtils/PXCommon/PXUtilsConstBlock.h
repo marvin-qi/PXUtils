@@ -12,6 +12,6 @@
 typedef void(^pxUtilsCompleted)(BOOL completed);
 typedef void(^pxUtilsCompletedResponse)(BOOL completed, id _Nullable response);
 typedef void(^pxUtilsCompletedIntValue)(BOOL completed, NSInteger intValue);
-typedef void(^pxUtilsCompletedString)(BOOL completed, NSString stringValue);
+typedef void(^pxUtilsCompletedString)(BOOL completed, NSString *_Nullable stringValue);
 
 #endif /* PXUtilsConstBlock_h */
