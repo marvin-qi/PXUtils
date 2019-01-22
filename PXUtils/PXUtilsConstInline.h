@@ -9,8 +9,6 @@
 #ifndef PXUtilsConstInline_h
 #define PXUtilsConstInline_h
 
-#import "UIColor+PX.h"
-
 /**
  是否是iPhone X以上的机型
  */
@@ -91,32 +89,6 @@ static inline CGFloat PXUtilsHeightByIP6P(CGFloat height){
  */
 static inline UIImage * PXUtilsImageNamed(NSString *imageName){
     return [UIImage imageNamed:imageName];
-}
-
-/**
- 16进制字符串生成颜色
- 
- @param hexString 16进制字符串
- */
-static inline UIColor *PXUtilsColorHex(NSString *hexString){
-    return [UIColor px_colorWithHexString:hexString];
-}
-
-/**
- 16进制字符串生成颜色，加透明度
- 
- @param hexString 16进制字符串
- @param alpha 透明度
- */
-static inline UIColor *PXUtilsColorHexAlpha(NSString *hexString, CGFloat alpha){
-    return [UIColor px_colorWithHexString:hexString alpha:alpha];
-}
-
-/**
- 生成随机色
- */
-static inline UIColor *PXUtilsRandomColor(){
-    return [UIColor px_randomColor];
 }
 
 /**

@@ -61,6 +61,7 @@
 		A60675F321F5A156009B7533 /* NSString+Security.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Security.m"; sourceTree = "<group>"; };
 		A60675F521F5A16C009B7533 /* NSData+Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Security.h"; sourceTree = "<group>"; };
 		A60675F621F5A16C009B7533 /* NSData+Security.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Security.m"; sourceTree = "<group>"; };
+		A654B5B221F6C091000D2CBC /* PXUtilsColorInline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsColorInline.h; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 				A60675E121F55B8C009B7533 /* PXUtilsConstant.m */,
 				A60675E321F55B8C009B7533 /* PXUtilsConstInline.h */,
 				A60675E221F55B8C009B7533 /* PXUtilsSingleton.h */,
+				A654B5B221F6C091000D2CBC /* PXUtilsColorInline.h */,
 			);
 			path = PXUtils;
 			sourceTree = SOURCE_ROOT;
