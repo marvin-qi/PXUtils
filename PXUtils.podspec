@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PXUtils"
-  s.version      = "2.6.2"
+  s.version      = "2.6.3"
   s.summary      = "iOS开发工具类"
 
   s.homepage     = "http://github.com/DemonArrow/PXUtils.git"
@@ -23,9 +23,6 @@ Pod::Spec.new do |s|
   end
   s.subspec 'PXSecurity' do |ss|
     ss.source_files = "PXUtils/PXSecurity/*.{h,m}"
-  end
-  s.subspec 'PXConst' do |ss|
-    ss.source_files = "PXUtils/PXConst/*.{h,m}"
   end
   s.dependency 'YYWebImage', '~> 1.0.5'
   s.requires_arc = true

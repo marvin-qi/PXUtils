@@ -154,20 +154,6 @@
 			path = PXSecurity;
 			sourceTree = "<group>";
 		};
-		A654B5B421F6C577000D2CBC /* PXConst */ = {
-			isa = PBXGroup;
-			children = (
-				A654B5B621F6C577000D2CBC /* PXUtilsColorInline.h */,
-				A654B5B521F6C577000D2CBC /* PXUtilsConstant.h */,
-				A654B5B721F6C577000D2CBC /* PXUtilsConstant.m */,
-				A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */,
-				A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */,
-				A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */,
-				A654B5E921F6E667000D2CBC /* PXUtilsConstEnum.h */,
-			);
-			path = PXConst;
-			sourceTree = "<group>";
-		};
 		A67A2D2B21F021180001F39B = {
 			isa = PBXGroup;
 			children = (
@@ -210,12 +196,18 @@
 		A67A2D4D21F021710001F39B /* PXUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A654B5B421F6C577000D2CBC /* PXConst */,
 				A60675F121F5A147009B7533 /* PXSecurity */,
 				A606759321F30534009B7533 /* PXDebug */,
 				A67A2DB521F0731E0001F39B /* PXKit */,
 				A67A2D5521F021710001F39B /* PXObject */,
 				A67A2D5621F0218B0001F39B /* PXUtils.h */,
+				A654B5B621F6C577000D2CBC /* PXUtilsColorInline.h */,
+				A654B5B521F6C577000D2CBC /* PXUtilsConstant.h */,
+				A654B5B721F6C577000D2CBC /* PXUtilsConstant.m */,
+				A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */,
+				A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */,
+				A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */,
+				A654B5E921F6E667000D2CBC /* PXUtilsConstEnum.h */,
 			);
 			path = PXUtils;
 			sourceTree = SOURCE_ROOT;
