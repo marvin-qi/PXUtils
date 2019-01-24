@@ -34,7 +34,7 @@
 #import "PXUtilsColorInline.h"
 #import "PXUtilsConstInline.h"
 #import "PXUtilsConstant.h"
-#import "PXUtilsConstEnum.h"
+#import "PXUtilsConstBlock.h"
 #import "PXUtilsSingleton.h"
 
 #endif /* PXUtils_h */

@@ -9,7 +9,6 @@
 #import "NSData+Security.h"
 #include <CommonCrypto/CommonCrypto.h>
 
-/*** MD5 ***/
 #define CC_MD5_DIGEST_LENGTH    16          /* digest length in bytes */
 #define CC_MD5_BLOCK_BYTES      64          /* block size in bytes */
 #define CC_MD5_BLOCK_LONG       (CC_MD5_BLOCK_BYTES / sizeof(CC_LONG))

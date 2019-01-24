@@ -1,21 +1,17 @@
 //
-//  PXUtilsConstEnum.h
+//  PXUtilsConstBlock.h
 //  PXUtilsDemo
 //
-//  Created by Charles on 2019/1/22.
+//  Created by Charles on 2019/1/24.
 //  Copyright © 2019 Charles.Qi. All rights reserved.
 //
 
-#ifndef PXUtilsConstEnum_h
-#define PXUtilsConstEnum_h
+#ifndef PXUtilsConstBlock_h
+#define PXUtilsConstBlock_h
 
 typedef void(^kPXUtilsCompleted)(BOOL completed);
 typedef void(^kPXUtilsCompletedResponse)(BOOL completed, id _Nullable response);
 typedef void(^kPXUtilsCompletedIntValue)(BOOL completed, NSInteger intValue);
 typedef void(^kPXUtilsCompletedString)(BOOL completed, NSString *_Nullable stringValue);
 
-//typedef NS_ENUM(NSInteger, PXEnum) {
-//    
-//};
-
-#endif /* PXUtilsConstEnum_h */
+#endif /* PXUtilsConstBlock_h */

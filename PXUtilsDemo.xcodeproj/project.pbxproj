@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		24F1C7C8D2470C4E48EA9FF7 /* Pods-PXUtilsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PXUtilsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PXUtilsDemo/Pods-PXUtilsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A601BADA21F99F7B00ACD074 /* PXUtilsConstBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstBlock.h; sourceTree = "<group>"; };
 		A606758921F1C755009B7533 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A606758A21F1C755009B7533 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A606759121F2EE0D009B7533 /* yahei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yahei.ttf; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		A654B5E121F6CB98000D2CBC /* PXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXObject.h; sourceTree = "<group>"; };
 		A654B5E221F6CB98000D2CBC /* NSDate+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PX.h"; sourceTree = "<group>"; };
 		A654B5E321F6CB98000D2CBC /* PXObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXObject.m; sourceTree = "<group>"; };
-		A654B5E921F6E667000D2CBC /* PXUtilsConstEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXUtilsConstEnum.h; sourceTree = "<group>"; };
 		A67A2D3421F021190001F39B /* PXUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PXUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A2D3721F021190001F39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67A2D3821F021190001F39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				A654B5BA21F6C577000D2CBC /* PXUtilsConstInline.h */,
 				A654B5B821F6C577000D2CBC /* PXUtilsMacros.h */,
 				A654B5B921F6C577000D2CBC /* PXUtilsSingleton.h */,
-				A654B5E921F6E667000D2CBC /* PXUtilsConstEnum.h */,
+				A601BADA21F99F7B00ACD074 /* PXUtilsConstBlock.h */,
 			);
 			path = PXUtils;
 			sourceTree = SOURCE_ROOT;
