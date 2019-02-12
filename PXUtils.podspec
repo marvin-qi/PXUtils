@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PXUtils"
-  s.version      = "2.9.2"
+  s.version      = "2.9.3"
   s.summary      = "iOS开发工具类"
 
   s.homepage     = "http://github.com/DemonArrow/PXUtils.git"

@@ -7,7 +7,6 @@
 //
 
 #import "UITextField+PX.h"
-#import "NSString+PX.h"
 #import <objc/runtime.h>
 
 @implementation UITextField (PX)
@@ -37,7 +36,9 @@
 }
 
 - (BOOL)isMobile{
-    return self.text.isMobile;
+    NSString *phoneRegex = @"^1([3-9][0-9])\\d{8}$";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:self.text];
 }
 
 - (void)setMaxLength:(NSUInteger)maxLength{
