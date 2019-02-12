@@ -7,6 +7,7 @@
 //
 
 #import "NSString+PX.h"
+#import "NSString+Security.h"
 
 @implementation NSString (PX)
 

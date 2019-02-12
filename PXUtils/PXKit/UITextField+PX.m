@@ -7,11 +7,8 @@
 //
 
 #import "UITextField+PX.h"
+#import "NSString+PX.h"
 #import <objc/runtime.h>
-
-@interface UITextField ()
-@property (nonatomic,assign) NSUInteger maxLength;
-@end
 
 @implementation UITextField (PX)
 
@@ -24,8 +21,32 @@
     });
 }
 
+- (void)setIsMobileTextField:(BOOL)isMobileTextField{
+    objc_setAssociatedObject(self, @selector(isMobileTextField), @(isMobileTextField), OBJC_ASSOCIATION_ASSIGN);
+    if (isMobileTextField) {
+        self.keyboardType = UIKeyboardTypePhonePad;
+        self.maxLength = 11;
+    }else{
+        self.keyboardType = UIReturnKeyDefault;
+        self.maxLength = 0;
+    }
+}
+
+- (BOOL)isMobileTextField{
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
+}
+
+- (BOOL)isMobile{
+    return self.text.isMobile;
+}
+
 - (void)setMaxLength:(NSUInteger)maxLength{
+    if (maxLength <= 0 ) return;
     objc_setAssociatedObject(self, @selector(maxLength), @(maxLength), OBJC_ASSOCIATION_ASSIGN);
+    if (self.text.length > 0) {
+        [self textDidChanged:self];
+    }
+    [self addTarget:self action:@selector(textDidChanged:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (NSUInteger)maxLength{
@@ -61,26 +82,22 @@
 }
 
 - (void)px_limitMaxLength:(NSUInteger)maxLength{
-    NSAssert(maxLength>=0, @"请设置正确的最大长度");//最大长度必须大于等于0
+    if (maxLength <= 0 ) return;
     self.maxLength = maxLength;
-    if (self.text.length > 0) {
-        [self textDidChanged:self];
-    }
-    [self addTarget:self action:@selector(textDidChanged:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (void)textDidChanged:(UITextField *)textField{
-    NSUInteger maxLength = self.maxLength;
+    if (self.maxLength <= 0) return;
     NSString *text = textField.text;
     UITextRange *selectedRange = [textField markedTextRange];
     UITextPosition *position = [textField positionFromPosition:selectedRange.start offset:0];
     if (!position || !selectedRange){
-        if (text.length > maxLength){
-            NSRange rangeIndex = [text rangeOfComposedCharacterSequenceAtIndex:maxLength];
+        if (text.length > self.maxLength){
+            NSRange rangeIndex = [text rangeOfComposedCharacterSequenceAtIndex:self.maxLength];
             if (rangeIndex.length == 1){
-                textField.text = [text substringToIndex:maxLength];
+                textField.text = [text substringToIndex:self.maxLength];
             }else{
-                NSRange rangeRange = [text rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, maxLength)];
+                NSRange rangeRange = [text rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, self.maxLength)];
                 textField.text = [text substringWithRange:rangeRange];
             }
         }

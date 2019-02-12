@@ -12,17 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Security)
 
-#pragma mark - Hash
-
-- (nullable NSString *)md5;
+@property (nonatomic, readonly, copy) NSString *md5;///< md5加密
+@property (nonatomic, readonly, copy) NSString *base64;///< base64加密
+@property (nonatomic, readonly, copy) NSString *urlEncode;///< urlEncode
 
 #pragma mark - Encode and decode
 
-- (nullable NSString *)base64Encoded;
-
 + (nullable NSString *)stringWithBase64EncodedString:(NSString *)base64Encoded;
-
-- (NSString *)stringByURLEncode;
 
 - (NSString *)stringByURLDecode;
 

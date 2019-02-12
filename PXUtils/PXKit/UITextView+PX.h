@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) UIColor  *placeholderColor;
 @property (nonatomic, strong) UIFont   *placeholderFont;
 
-@property (nonatomic,assign) NSUInteger maxLength;///< 最大长度
+@property (nonatomic, assign) NSUInteger maxLength;///< 最大长度,0为不限制长度
 
 /**
  限制最大长度

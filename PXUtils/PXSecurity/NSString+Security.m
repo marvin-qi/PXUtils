@@ -15,7 +15,7 @@
     return [[self dataUsingEncoding:NSUTF8StringEncoding] md5String];
 }
 
-- (NSString *)base64Encoded{
+- (NSString *)base64{
     return [[self dataUsingEncoding:NSUTF8StringEncoding] base64EncodedString];
 }
 
@@ -24,7 +24,7 @@
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
-- (NSString *)stringByURLEncode {
+- (NSString *)urlEncode {
     if ([self respondsToSelector:@selector(stringByAddingPercentEncodingWithAllowedCharacters:)]) {
         static NSString * const kAFCharactersGeneralDelimitersToEncode = @":#[]@"; // does not include "?" or "/" due to RFC 3986 - Section 3.4
         static NSString * const kAFCharactersSubDelimitersToEncode = @"!$&'()*+,;=";

@@ -33,6 +33,11 @@
     view.lineColor = PXUtilsColorHex(@"3fd15b");
     view.text = [NSDate date].currentTimeString;
     
+    UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(100, 110, 200, 30)];
+    [self.view addSubview:tf];
+    tf.isMobileTextField = TRUE;
+    tf.backgroundColor = PXUtilsRandomColor();
+    
     UITextView *tv = [[UITextView alloc] init];
     [self.view addSubview:tv];
     

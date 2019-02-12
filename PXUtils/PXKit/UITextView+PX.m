@@ -25,7 +25,7 @@
 }
 
 - (void)setMaxLength:(NSUInteger)maxLength{
-    NSAssert(maxLength>0, @"必须设置大于0的长度");
+    if (maxLength <= 0 ) return;
     objc_setAssociatedObject(self, @selector(maxLength), @(maxLength), OBJC_ASSOCIATION_ASSIGN);
     if (self.text.length > 0) {
         [self textDidChanged:self];
@@ -78,6 +78,7 @@
 }
 
 - (void)px_limitMaxLength:(NSUInteger)maxLength{
+    if (maxLength <= 0 ) return;
     self.maxLength = maxLength;
 }
 
@@ -86,18 +87,17 @@
 }
 
 - (void)textDidChanged:(UITextView *)textView{
-    NSUInteger maxLength = self.maxLength;
-    if (maxLength > 0) {
+    if (self.maxLength > 0) {
         NSString *text = textView.text;
         UITextRange *selectedRange = [textView markedTextRange];
         UITextPosition *position = [textView positionFromPosition:selectedRange.start offset:0];
         if (!position || !selectedRange){
-            if (text.length > maxLength){
-                NSRange rangeIndex = [text rangeOfComposedCharacterSequenceAtIndex:maxLength];
+            if (text.length > self.maxLength){
+                NSRange rangeIndex = [text rangeOfComposedCharacterSequenceAtIndex:self.maxLength];
                 if (rangeIndex.length == 1){
-                    textView.text = [text substringToIndex:maxLength];
+                    textView.text = [text substringToIndex:self.maxLength];
                 }else{
-                    NSRange rangeRange = [text rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, maxLength)];
+                    NSRange rangeRange = [text rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, self.maxLength)];
                     textView.text = [text substringWithRange:rangeRange];
                 }
             }
