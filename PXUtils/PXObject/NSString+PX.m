@@ -19,7 +19,7 @@
 }
 
 - (BOOL)isIdNumberNormal{
-    return [self checkIdNumber];
+    return [self checkIdNumberNormal];
 }
 
 - (BOOL)isIdNumber{
