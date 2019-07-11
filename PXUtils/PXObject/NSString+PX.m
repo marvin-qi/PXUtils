@@ -35,7 +35,7 @@
 }
 
 - (BOOL)checkMobile{
-    NSString *phoneRegex = @"^1([3-9][0-9])\\d{8}$";
+    NSString *phoneRegex = @"^1([3-9])\\d{9}$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
     return [phoneTest evaluateWithObject:self];
 }
@@ -54,48 +54,47 @@
 
 - (BOOL)checkIdNumber{
     NSString *idnum = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    NSInteger length =self.length;
-    if (length!=15&&length!=18) {
+    NSInteger length = self.length;
+    if (length != 15 && length != 18) {
         return NO;
     }
     // 省份代码
     NSArray *areasArray =@[@"11",@"12", @"13",@"14", @"15",@"21", @"22",@"23", @"31",@"32", @"33",@"34", @"35",@"36", @"37",@"41",@"42",@"43", @"44",@"45", @"46",@"50", @"51",@"52", @"53",@"54", @"61",@"62", @"63",@"64", @"65",@"71", @"81",@"82", @"91"];
     NSString *valueStart2 = [idnum substringToIndex:2];
-    BOOL areaFlag =NO;
-    for (NSString *areaCode in areasArray) {
-        if ([areaCode isEqualToString:valueStart2]) {
-            areaFlag =YES;
-            break;
-        }
-    }
-    if (!areaFlag) {
-        return NO;
-    }
+    BOOL areaFlag = NO;
+//    for (NSString *areaCode in areasArray) {
+//        if ([areaCode isEqualToString:valueStart2]) {
+//            areaFlag =YES;
+//            break;
+//        }
+//    }
+    areaFlag = [areasArray containsObject:valueStart2];
+    if (!areaFlag) return NO;
     NSRegularExpression *regularExpression;
     NSUInteger numberofMatch;
-    int year =0;
-    if (length==15) {
+    int year = 0;
+    if (length == 15) {
         year = [idnum substringWithRange:NSMakeRange(6,2)].intValue +1900;
-        if (year %4 ==0 || (year %100 ==0 && year %4 ==0)) {
+        if (year % 4 == 0 || (year % 100 == 0 && year % 4 ==0)) {
             regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|[1-2][0-9]))[0-9]{3}$" options:NSRegularExpressionCaseInsensitive error:nil];//测试出生日期的合法性
         }else {
             regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|1[0-9]|2[0-8]))[0-9]{3}$"options:NSRegularExpressionCaseInsensitive error:nil];//测试出生日期的合法性
         }
         numberofMatch = [regularExpression numberOfMatchesInString:idnum options:NSMatchingReportProgress range:NSMakeRange(0, idnum.length)];
-        if(numberofMatch >0) {
+        if(numberofMatch > 0) {
             return YES;
         }else {
             return NO;
         }
     }else if(length == 18){
         year = [idnum substringWithRange:NSMakeRange(6,4)].intValue;
-        if (year %4 ==0 || (year %100 ==0 && year %4 ==0)) {
+        if (year % 4 == 0 || (year % 100 == 0 && year % 4 == 0)) {
             regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}19[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|[1-2][0-9]))[0-9]{3}[0-9Xx]$" options:NSRegularExpressionCaseInsensitive error:nil];//测试出生日期的合法性
         }else {
             regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}19[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|1[0-9]|2[0-8]))[0-9]{3}[0-9Xx]$" options:NSRegularExpressionCaseInsensitive error:nil];//测试出生日期的合法性
         }
         numberofMatch = [regularExpression numberOfMatchesInString:idnum options:NSMatchingReportProgress range:NSMakeRange(0, idnum.length)];
-        if(numberofMatch >0) {
+        if(numberofMatch > 0) {
             int S = ([idnum substringWithRange:NSMakeRange(0,1)].intValue +
                      [idnum substringWithRange:NSMakeRange(10,1)].intValue) *7 +
             ([idnum substringWithRange:NSMakeRange(1,1)].intValue +
@@ -113,9 +112,9 @@
             [idnum substringWithRange:NSMakeRange(7,1)].intValue *1 +
             [idnum substringWithRange:NSMakeRange(8,1)].intValue *6 +
             [idnum substringWithRange:NSMakeRange(9,1)].intValue *3;
-            int Y = S %11;
-            NSString *M =@"F";
-            NSString *JYM =@"10X98765432";
+            int Y = S % 11;
+            NSString *M = @"F";
+            NSString *JYM = @"10X98765432";
             M = [JYM substringWithRange:NSMakeRange(Y,1)];// 判断校验位
             if ([M isEqualToString:[idnum substringWithRange:NSMakeRange(17,1)]]) {
                 return YES;// 检测ID的校验位

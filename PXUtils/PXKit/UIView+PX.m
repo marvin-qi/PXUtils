@@ -149,13 +149,21 @@
 }
 
 - (UIImage *)px_cutImageWithFrame:(CGRect)frame{
-    UIGraphicsBeginImageContextWithOptions(frame.size, NO, 0.0f);
+    int scale = [UIScreen mainScreen].scale;
+    CGRect rect = frame;
+    rect.origin.x *= scale;
+    rect.origin.y *= scale;
+    rect.size.width *= scale;
+    rect.size.height *= scale;
+    
+    UIGraphicsBeginImageContextWithOptions(rect.size, YES, scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
     [self.layer renderInContext:context];
-    [[UIColor clearColor] setFill];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    CGImageRef cgImage = CGImageCreateWithImageInRect(image.CGImage, rect);
+    UIImage * newImage = [UIImage imageWithCGImage:cgImage];
+    CGImageRelease(cgImage);
+    return newImage;
 }
 
 - (void)px_removeAllSubviews{
