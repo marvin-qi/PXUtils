@@ -7,7 +7,6 @@
 //
 
 #import "UIButton+PX.h"
-#import "YYWebImage.h"
 #import "UIImage+PX.h"
 
 @implementation UIButton (PX)
@@ -28,18 +27,6 @@
         [view addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     }
     return view;
-}
-
-- (void)px_setImageWithUrl:(NSString *)url placeholder:(UIImage *)placeholder state:(UIControlState)state{
-    [self yy_setImageWithURL:[NSURL URLWithString:url] forState:state placeholder:placeholder];
-}
-
-- (void)px_setImageWithUrl:(NSString *)url placeholder:(UIImage *)placeholder{
-    [self px_setImageWithUrl:url placeholder:placeholder state:UIControlStateNormal];
-}
-
-- (void)px_setImageWithUrl:(NSString *)url placeholderName:(nonnull NSString *)placeholderName{
-    [self px_setImageWithUrl:url placeholder:[UIImage imageNamed:placeholderName]];
 }
 
 - (void)px_buttonType:(PXButtonType)type image:(UIImage *)image title:(NSString *)title space:(CGFloat)space{

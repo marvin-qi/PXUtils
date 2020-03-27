@@ -14,7 +14,6 @@
 #import "UIColor+PX.h"
 #import "UIFont+PX.h"
 #import "UIImage+PX.h"
-#import "UIImageView+PX.h"
 #import "UILabel+PX.h"
 #import "UIView+PX.h"
 #import "UITextField+PX.h"

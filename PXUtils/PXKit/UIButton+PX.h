@@ -26,10 +26,6 @@ typedef NS_ENUM(NSInteger, PXButtonType) {
                             target:(nullable id)target
                             action:(SEL)action;
 
-- (void)px_setImageWithUrl:(NSString *)url placeholder:(UIImage *)placeholder state:(UIControlState)state;
-- (void)px_setImageWithUrl:(NSString *)url placeholder:(UIImage *)placeholder;
-- (void)px_setImageWithUrl:(NSString *)url placeholderName:(NSString *)placeholderName;
-
 
 /**
  设置UIButton图片文字位置,需要先设置UIButton的Size

@@ -23,7 +23,6 @@
 		A654B5D321F6CB8D000D2CBC /* UIFont+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C221F6CB8C000D2CBC /* UIFont+PX.m */; };
 		A654B5D421F6CB8D000D2CBC /* UITextView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C421F6CB8C000D2CBC /* UITextView+PX.m */; };
 		A654B5D521F6CB8D000D2CBC /* UIView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C721F6CB8C000D2CBC /* UIView+PX.m */; };
-		A654B5D621F6CB8D000D2CBC /* UIImageView+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C821F6CB8C000D2CBC /* UIImageView+PX.m */; };
 		A654B5D721F6CB8D000D2CBC /* UIButton+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5C921F6CB8C000D2CBC /* UIButton+PX.m */; };
 		A654B5D821F6CB8D000D2CBC /* UIImage+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5CA21F6CB8C000D2CBC /* UIImage+PX.m */; };
 		A654B5D921F6CB8D000D2CBC /* UITextField+PX.m in Sources */ = {isa = PBXBuildFile; fileRef = A654B5CC21F6CB8C000D2CBC /* UITextField+PX.m */; };
@@ -65,10 +64,8 @@
 		A654B5C221F6CB8C000D2CBC /* UIFont+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+PX.m"; sourceTree = "<group>"; };
 		A654B5C321F6CB8C000D2CBC /* UITextView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PX.h"; sourceTree = "<group>"; };
 		A654B5C421F6CB8C000D2CBC /* UITextView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PX.m"; sourceTree = "<group>"; };
-		A654B5C521F6CB8C000D2CBC /* UIImageView+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PX.h"; sourceTree = "<group>"; };
 		A654B5C621F6CB8C000D2CBC /* UITextField+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PX.h"; sourceTree = "<group>"; };
 		A654B5C721F6CB8C000D2CBC /* UIView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PX.m"; sourceTree = "<group>"; };
-		A654B5C821F6CB8C000D2CBC /* UIImageView+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PX.m"; sourceTree = "<group>"; };
 		A654B5C921F6CB8C000D2CBC /* UIButton+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PX.m"; sourceTree = "<group>"; };
 		A654B5CA21F6CB8C000D2CBC /* UIImage+PX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PX.m"; sourceTree = "<group>"; };
 		A654B5CB21F6CB8C000D2CBC /* UIColor+PX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PX.h"; sourceTree = "<group>"; };
@@ -238,8 +235,6 @@
 				A654B5C221F6CB8C000D2CBC /* UIFont+PX.m */,
 				A654B5CE21F6CB8D000D2CBC /* UIImage+PX.h */,
 				A654B5CA21F6CB8C000D2CBC /* UIImage+PX.m */,
-				A654B5C521F6CB8C000D2CBC /* UIImageView+PX.h */,
-				A654B5C821F6CB8C000D2CBC /* UIImageView+PX.m */,
 				A654B5CD21F6CB8C000D2CBC /* UILabel+PX.h */,
 				A654B5D121F6CB8D000D2CBC /* UILabel+PX.m */,
 				A654B5C621F6CB8C000D2CBC /* UITextField+PX.h */,
@@ -398,7 +393,6 @@
 				A60675C621F3218E009B7533 /* User.m in Sources */,
 				A654B5D821F6CB8D000D2CBC /* UIImage+PX.m in Sources */,
 				A60675C821F3218E009B7533 /* PXDebug.m in Sources */,
-				A654B5D621F6CB8D000D2CBC /* UIImageView+PX.m in Sources */,
 				A654B5DB21F6CB8D000D2CBC /* UILabel+PX.m in Sources */,
 				A60675C921F3218E009B7533 /* UIView+Debug.m in Sources */,
 				A60675CA21F3218E009B7533 /* UIViewController+Debug.m in Sources */,
@@ -550,6 +544,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.9.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Charles.PXUtilsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -570,6 +565,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.9.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Charles.PXUtilsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
